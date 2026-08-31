@@ -1,11 +1,6 @@
-/* ==========================================
-   طعم خونه - STYLE.CSS
-   ========================================== */
-
-
-/* ==========================================
-   RESET
-========================================== */
+/* =========================
+   تنظیمات کلی
+========================= */
 
 * {
     margin: 0;
@@ -13,1119 +8,241 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background: #fffaf7;
-    color: #2d2420;
+    background: #fff7f2;
+    color: #333;
     line-height: 1.8;
-    transition:
-        background 0.3s,
-        color 0.3s;
 }
 
 
-button,
-input {
-    font-family: inherit;
+/* =========================
+   هدر
+========================= */
+
+.header {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 45px;
+}
+
+.logo h1 {
+    font-size: 40px;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 17px;
 }
 
 
-button {
-    cursor: pointer;
+/* =========================
+   بخش جستجو
+========================= */
+
+.hero {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-ul,
-ol {
-    padding-right: 25px;
-}
-
-
-/* ==========================================
-   CONTAINER
-========================================== */
-
-.container {
-    width: min(1150px, 92%);
+.hero-content {
+    max-width: 800px;
     margin: auto;
 }
 
-
-/* ==========================================
-   HEADER
-========================================== */
-
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.96);
-    border-bottom: 1px solid #eee;
-    backdrop-filter: blur(10px);
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e85d04;
 }
-
-
-.header-container {
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ff6b35;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-}
-
-
-.logo-icon {
-    font-size: 28px;
-}
-
-
-/* ==========================================
-   NAVIGATION
-========================================== */
-
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-
-.nav a {
-    font-size: 14px;
-    transition: 0.25s;
-}
-
-
-.nav a:hover {
-    color: #ff6b35;
-}
-
-
-/* ==========================================
-   HEADER BUTTONS
-========================================== */
-
-.header-buttons {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-
-.header-button,
-.mobile-button {
-    border: none;
-    background: #fff3ed;
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    font-size: 18px;
-    transition: 0.25s;
-}
-
-
-.header-button:hover,
-.mobile-button:hover {
-    background: #ff6b35;
-    color: white;
-}
-
-
-.favorite-header {
-    position: relative;
-}
-
-
-#favoriteCount {
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    background: #ff3b30;
-    color: white;
-    font-size: 11px;
-    width: 19px;
-    height: 19px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-
-.mobile-button {
-    display: none;
-}
-
-
-/* ==========================================
-   MOBILE MENU
-========================================== */
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: white;
-    padding: 15px;
-    border-top: 1px solid #eee;
-}
-
-
-.mobile-menu.show {
-    display: flex;
-}
-
-
-.mobile-menu a {
-    padding: 12px;
-    border-radius: 10px;
-}
-
-
-.mobile-menu a:hover {
-    background: #fff3ed;
-}
-
-
-/* ==========================================
-   HERO
-========================================== */
-
-.hero {
-    padding: 90px 0;
-    background:
-        radial-gradient(
-            circle at top right,
-            #ffe5d8,
-            transparent 45%
-        ),
-        #fffaf7;
-}
-
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
-    gap: 50px;
-}
-
-
-.hero-badge {
-    display: inline-block;
-    background: #fff0e8;
-    color: #ff6b35;
-    padding: 8px 18px;
-    border-radius: 50px;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-
-.hero h1 {
-    font-size: clamp(36px, 5vw, 62px);
-    line-height: 1.3;
-    margin-bottom: 20px;
-}
-
-
-.hero h1 span {
-    color: #ff6b35;
-}
-
 
 .hero p {
-    max-width: 600px;
-    font-size: 17px;
-    color: #6d5c55;
+    color: #666;
     margin-bottom: 25px;
 }
 
-
-/* ==========================================
-   HERO ACTIONS
-========================================== */
-
-.hero-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-
-.primary-button,
-.secondary-button {
-    border: none;
-    padding: 13px 24px;
-    border-radius: 12px;
-    font-size: 15px;
-    transition: 0.25s;
-}
-
-
-.primary-button {
-    background: #ff6b35;
-    color: white;
-}
-
-
-.primary-button:hover {
-    background: #e95826;
-    transform: translateY(-2px);
-}
-
-
-.secondary-button {
-    background: white;
-    border: 1px solid #eee;
-    color: #333;
-}
-
-
-.secondary-button:hover {
-    border-color: #ff6b35;
-    color: #ff6b35;
-}
-
-
-/* ==========================================
-   HERO STATS
-========================================== */
-
-.hero-stats {
-    display: flex;
-    gap: 30px;
-    margin-top: 35px;
-}
-
-
-.hero-stats div {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.hero-stats strong {
-    color: #ff6b35;
-    font-size: 24px;
-}
-
-
-.hero-stats span {
-    font-size: 13px;
-    color: #777;
-}
-
-
-/* ==========================================
-   HERO VISUAL
-========================================== */
-
-.hero-visual {
-    position: relative;
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.main-food {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #ff6b35,
-        #ff9a5c
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 120px;
-    box-shadow: 0 25px 60px rgba(255, 107, 53, 0.25);
-}
-
-
-.floating {
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    background: white;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-
-.floating-one {
-    top: 30px;
-    right: 30px;
-}
-
-
-.floating-two {
-    bottom: 40px;
-    right: 20px;
-}
-
-
-.floating-three {
-    top: 40px;
-    left: 20px;
-}
-
-
-.floating-four {
-    bottom: 20px;
-    left: 40px;
-}
-
-
-/* ==========================================
-   INFO SECTION
-========================================== */
-
-.info-section {
-    padding: 70px 0;
-}
-
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-
-.info-card {
-    background: white;
-    padding: 25px;
-    border-radius: 18px;
-    border: 1px solid #eee;
-    transition: 0.25s;
-}
-
-
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
-}
-
-
-.info-card > div {
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-
-
-.info-card h3 {
-    margin-bottom: 8px;
-}
-
-
-.info-card p {
-    font-size: 14px;
-    color: #777;
-}
-
-
-/* ==========================================
-   SECTIONS
-========================================== */
-
-.search-section,
-.categories-section,
-.popular-section,
-.recipes-section,
-.tips-section,
-.about-section {
-    padding: 80px 0;
-}
-
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-
-.section-title span {
-    color: #ff6b35;
-    font-size: 14px;
-}
-
-
-.section-title h2 {
-    font-size: 32px;
-    margin: 8px 0;
-}
-
-
-.section-title p {
-    color: #777;
-}
-
-
-/* ==========================================
-   SEARCH
-========================================== */
-
-.search-section {
-    background: #fff3ed;
-}
-
-
 .search-box {
-    max-width: 650px;
+    max-width: 600px;
     margin: auto;
-    display: flex;
-    gap: 10px;
 }
-
 
 .search-box input {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 14px 16px;
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #ff8e53;
+    border-radius: 30px;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
+    text-align: right;
+    transition: 0.3s;
 }
-
 
 .search-box input:focus {
-    border-color: #ff6b35;
+    border-color: #e85d04;
+    box-shadow: 0 0 15px rgba(232, 93, 4, 0.2);
 }
 
 
-.search-box button {
-    border: none;
-    background: #ff6b35;
-    color: white;
-    padding: 0 25px;
-    border-radius: 12px;
+/* =========================
+   بخش اصلی
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-
-.quick-searches {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-
-.quick-search {
-    border: none;
-    background: white;
-    padding: 8px 15px;
-    border-radius: 30px;
-    transition: 0.25s;
-}
-
-
-.quick-search:hover {
-    background: #ff6b35;
-    color: white;
-}
-
-
-/* ==========================================
-   CATEGORIES
-========================================== */
-
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-
-.category-card {
-    background: white;
-    border: 1px solid #eee;
-    padding: 30px;
-    border-radius: 20px;
+.intro {
     text-align: center;
-    transition: 0.25s;
-}
-
-
-.category-card:hover {
-    transform: translateY(-6px);
-    border-color: #ff6b35;
-}
-
-
-.category-card > div {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-
-
-.category-card p {
-    color: #777;
-    font-size: 14px;
-}
-
-
-/* ==========================================
-   POPULAR
-========================================== */
-
-.popular-section {
-    background: #fff3ed;
-}
-
-
-.popular-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-
-.popular-card {
-    position: relative;
-    background: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 22px;
-}
-
-
-.popular-rank {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #ff6b35;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-}
-
-
-.popular-emoji {
-    font-size: 70px;
-    margin-bottom: 15px;
-}
-
-
-.popular-card p {
-    color: #777;
-    margin: 8px 0 18px;
-}
-
-
-/* ==========================================
-   FILTERS
-========================================== */
-
-.filters {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
     margin-bottom: 35px;
 }
 
+.intro h2 {
+    font-size: 30px;
+    color: #e85d04;
+}
 
-.filter {
-    border: 1px solid #eee;
-    background: white;
-    padding: 9px 17px;
-    border-radius: 30px;
+.intro p {
+    color: #666;
+    margin-top: 8px;
 }
 
 
-.filter.active,
-.filter:hover {
-    background: #ff6b35;
-    color: white;
-    border-color: #ff6b35;
-}
-
-
-/* ==========================================
-   RECIPES GRID
-========================================== */
+/* =========================
+   کارت غذاها
+========================= */
 
 .recipes-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
-
 
 .recipe-card {
     background: white;
-    border: 1px solid #eee;
     border-radius: 20px;
-    overflow: hidden;
-    transition: 0.25s;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border: 1px solid #f0e0d8;
 }
-
 
 .recipe-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-
-.recipe-card.hidden {
-    display: none;
-}
-
-
-.food-image {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-}
-
-
-.green {
-    background: #dff4e2;
-}
-
-
-.yellow {
-    background: #fff0bd;
-}
-
-
-.red {
-    background: #ffd8d5;
-}
-
-
-.orange {
-    background: #ffe0c7;
-}
-
-
-.cream {
-    background: #fff5df;
-}
-
-
-.brown {
-    background: #ead7c4;
-}
-
-
-.darkfood {
-    background: #ded7d1;
-}
-
-
-.chocolate {
-    background: #e8d0c0;
-}
-
-
-.recipe-info {
-    padding: 20px;
-}
-
-
-.category {
-    display: inline-block;
-    font-size: 12px;
-    background: #fff0e8;
-    color: #ff6b35;
-    padding: 3px 10px;
-    border-radius: 20px;
-    margin-bottom: 8px;
-}
-
-
-.recipe-info h3 {
-    font-size: 20px;
-}
-
-
-.recipe-info p {
-    color: #777;
-    font-size: 14px;
-    margin: 8px 0 15px;
-}
-
-
-.recipe-details {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-
-.card-buttons {
-    display: flex;
-    gap: 8px;
-}
-
-
-.view-recipe {
-    flex: 1;
-    border: none;
-    background: #ff6b35;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-.favorite {
-    width: 45px;
-    border: none;
-    background: #fff0e8;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-
-.favorite.active {
-    background: #ff3b30;
-    color: white;
-}
-
-
-.no-results {
-    display: none;
-    text-align: center;
-    padding: 50px;
-}
-
-
-/* ==========================================
-   FEATURED
-========================================== */
-
-.featured-section {
-    padding: 80px 0;
-    background: linear-gradient(
-        135deg,
-        #ff6b35,
-        #ff9a5c
-    );
-    color: white;
-}
-
-
-.featured-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-
-.featured-food {
-    position: relative;
-    font-size: 30px;
-}
-
-
-.featured-food div {
-    font-size: 130px;
-}
-
-
-.featured-content {
-    max-width: 500px;
-}
-
-
-.featured-content h2 {
-    font-size: 36px;
-    margin: 10px 0;
-}
-
-
-/* ==========================================
-   TIPS
-========================================== */
-
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-
-.tip-card {
-    background: white;
-    padding: 25px;
-    border-radius: 18px;
-    border: 1px solid #eee;
-}
-
-
-.tip-card > div {
-    font-size: 35px;
-}
-
-
-.tip-card p {
-    color: #777;
-    font-size: 14px;
-}
-
-
-/* ==========================================
-   RANDOM
-========================================== */
-
-.random-section {
-    padding: 70px 0;
-    background: #fff3ed;
-}
-
-
-.random-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-
-.random-content h2 {
-    font-size: 32px;
-}
-
-
-/* ==========================================
-   STATS
-========================================== */
-
-.stats-section {
-    padding: 60px 0;
-}
-
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-}
-
-
-.stats-grid div {
-    padding: 20px;
-}
-
-
-.stats-grid strong {
-    display: block;
-    font-size: 30px;
-    color: #ff6b35;
-}
-
-
-.stats-grid span {
-    color: #777;
-}
-
-
-/* ==========================================
-   ABOUT
-========================================== */
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-
-.about-emoji {
-    font-size: 120px;
-}
-
-
-.about-text {
-    max-width: 600px;
-}
-
-
-.about-text > span {
-    color: #ff6b35;
-}
-
-
-.about-text h2 {
-    font-size: 35px;
-    margin: 10px 0;
-}
-
-
-.about-text p {
-    color: #666;
-    margin-top: 12px;
-}
-
-
-/* ==========================================
-   NEWSLETTER
-========================================== */
-
-.newsletter-section {
-    padding: 70px 0;
-    background: #2d2420;
-    color: white;
-}
-
-
-.newsletter-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-
-.newsletter-form {
-    display: flex;
-    gap: 10px;
-}
-
-
-.newsletter-form input {
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    outline: none;
-    min-width: 230px;
-}
-
-
-.newsletter-form button {
-    border: none;
-    background: #ff6b35;
-    color: white;
-    padding: 0 25px;
-    border-radius: 10px;
-}
-
-
-/* ==========================================
-   FOOTER
-========================================== */
-
-footer {
-    background: #211a17;
-    color: white;
-    padding: 45px 0;
-    text-align: center;
-}
-
-
-.footer-logo {
-    font-size: 24px;
-    font-weight: bold;
+.recipe-emoji {
+    font-size: 55px;
     margin-bottom: 10px;
 }
 
+.recipe-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 8px;
+}
 
-.footer-content > p {
-    color: #bbb;
+.recipe-card p {
+    color: #777;
+    min-height: 58px;
 }
 
 
-.footer-links {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
+/* =========================
+   دکمه دستور پخت
+========================= */
+
+.recipe-button {
+    border: none;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    color: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.recipe-button:hover {
+    transform: scale(1.05);
+}
+
+.recipe-button:active {
+    transform: scale(0.96);
 }
 
 
-.footer-links a {
-    color: #ddd;
-}
-
-
-.footer-links a:hover {
-    color: #ff6b35;
-}
-
-
-footer small {
-    color: #888;
-}
-
-
-/* ==========================================
-   MODAL
-========================================== */
+/* =========================
+   پنجره دستور پخت
+========================= */
 
 .modal {
     display: none;
     position: fixed;
+    z-index: 999;
     inset: 0;
-    z-index: 1000;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    overflow-y: auto;
 }
-
 
 .modal.show {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
 }
 
-
-.modal-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-
-.modal-box {
-    position: relative;
-    z-index: 2;
+.modal-content {
+    width: 100%;
+    max-width: 700px;
     background: white;
-    width: min(700px, 92%);
-    max-height: 85vh;
-    overflow-y: auto;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 30px;
+    position: relative;
+    animation: modalOpen 0.3s ease;
+    margin-bottom: 30px;
 }
 
+@keyframes modalOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   دکمه بستن
+========================= */
 
 .close-button {
     position: absolute;
@@ -1135,352 +252,132 @@ footer small {
     height: 40px;
     border: none;
     border-radius: 50%;
-    background: #fff0e8;
-    font-size: 25px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.close-button:hover {
+    transform: rotate(90deg);
 }
 
 
-.modal-title {
-    margin-bottom: 25px;
+/* =========================
+   محتوای دستور غذا
+========================= */
+
+.modal-recipe {
+    text-align: right;
+    padding-top: 20px;
 }
 
-
-/* ==========================================
-   RECIPE MODAL
-========================================== */
-
-.recipe-modal-content {
-    padding-top: 10px;
-}
-
-
-.recipe-modal-emoji {
+.modal-emoji {
     text-align: center;
-    font-size: 80px;
+    font-size: 75px;
+    margin-bottom: 10px;
 }
 
-
-.recipe-modal-content h2 {
+.modal-recipe h2 {
     text-align: center;
-    margin-bottom: 25px;
-    color: #ff6b35;
+    font-size: 32px;
+    color: #e85d04;
+    margin-bottom: 15px;
 }
 
-
-.recipe-modal-content h3 {
+.modal-recipe h3 {
     margin-top: 25px;
     margin-bottom: 10px;
-    color: #333;
+    color: #ff6b6b;
 }
 
-
-.recipe-modal-content li {
-    margin-bottom: 10px;
-    line-height: 2;
-}
-
-
-.recipe-modal-content ol li {
-    background: #fffaf7;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-/* ==========================================
-   FAVORITES
-========================================== */
-
-.favorite-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    background: #fffaf7;
-    padding: 15px;
+.modal-recipe p {
+    background: #fff5ef;
+    padding: 10px 15px;
     border-radius: 12px;
     margin-bottom: 10px;
 }
 
+.modal-recipe ul,
+.modal-recipe ol {
+    padding-right: 25px;
+    padding-left: 10px;
+}
 
-.view-favorite-recipe {
-    border: none;
-    background: #ff6b35;
+.modal-recipe li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   فوتر
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #333;
     color: white;
-    padding: 8px 13px;
-    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-top: 5px;
 }
 
 
-/* ==========================================
-   TOAST
-========================================== */
-
-.toast {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 2000;
-    background: #2d2420;
-    color: white;
-    padding: 13px 20px;
-    border-radius: 12px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.3s;
-}
-
-
-.toast.show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-/* ==========================================
-   DARK MODE
-========================================== */
-
-body.dark-mode {
-    background: #181818;
-    color: #f1f1f1;
-}
-
-
-body.dark-mode .header,
-body.dark-mode .mobile-menu,
-body.dark-mode .info-card,
-body.dark-mode .category-card,
-body.dark-mode .popular-card,
-body.dark-mode .recipe-card,
-body.dark-mode .tip-card,
-body.dark-mode .modal-box {
-    background: #242424;
-    color: #f1f1f1;
-    border-color: #3a3a3a;
-}
-
-
-body.dark-mode .hero {
-    background: #1d1d1d;
-}
-
-
-body.dark-mode .search-section,
-body.dark-mode .popular-section,
-body.dark-mode .random-section {
-    background: #202020;
-}
-
-
-body.dark-mode .secondary-button,
-body.dark-mode .quick-search,
-body.dark-mode .filter {
-    background: #2a2a2a;
-    color: white;
-    border-color: #444;
-}
-
-
-body.dark-mode .recipe-info p,
-body.dark-mode .section-title p,
-body.dark-mode .tip-card p,
-body.dark-mode .info-card p,
-body.dark-mode .about-text p {
-    color: #bbb;
-}
-
-
-body.dark-mode .recipe-modal-content ol li,
-body.dark-mode .favorite-item {
-    background: #1c1c1c;
-}
-
-
-/* ==========================================
-   RESPONSIVE - TABLET
-========================================== */
-
-@media (max-width: 900px) {
-
-    .nav {
-        display: none;
-    }
-
-
-    .mobile-button {
-        display: block;
-    }
-
-
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .popular-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .recipes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .tips-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .newsletter-container,
-    .random-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-}
-
-
-/* ==========================================
-   RESPONSIVE - MOBILE
-========================================== */
+/* =========================
+   ریسپانسیو موبایل
+========================= */
 
 @media (max-width: 600px) {
 
-    .header-container {
-        min-height: 65px;
+    .logo h1 {
+        font-size: 30px;
     }
 
-
-    .logo {
-        font-size: 18px;
+    .logo-icon {
+        font-size: 35px;
     }
-
 
     .hero {
-        padding: 60px 0;
+        padding: 35px 15px;
     }
 
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-
-    .hero-stats {
-        gap: 18px;
-    }
-
-
-    .hero-visual {
-        min-height: 280px;
-    }
-
-
-    .main-food {
-        width: 180px;
-        height: 180px;
-        font-size: 85px;
-    }
-
-
-    .floating {
-        width: 52px;
-        height: 52px;
+    .hero h2 {
         font-size: 25px;
     }
 
+    .container {
+        padding: 30px 15px;
+    }
 
-    .info-grid,
-    .categories-grid,
-    .recipes-grid,
-    .tips-grid {
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .recipes-grid {
         grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-
-    .search-box {
-        flex-direction: column;
+    .modal.show {
+        padding: 15px;
+        align-items: flex-start;
     }
 
-
-    .search-box button {
-        padding: 14px;
+    .modal-content {
+        padding: 25px 18px;
+        border-radius: 18px;
     }
 
-
-    .recipe-details {
-        flex-direction: column;
-        gap: 5px;
+    .modal-recipe h2 {
+        font-size: 25px;
     }
 
-
-    .featured-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .newsletter-form {
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .newsletter-form input,
-    .newsletter-form button {
-        width: 100%;
-    }
-
-
-    .modal-box {
-        padding: 22px 18px;
-    }
-
-
-    .favorite-item {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-    }
-
-
-    .toast {
-        right: 15px;
-        left: 15px;
-        bottom: 15px;
-        text-align: center;
+    .modal-emoji {
+        font-size: 60px;
     }
 
 }
