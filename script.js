@@ -1,9 +1,14 @@
-// ===============================
-// FOOD DATABASE
-// ===============================
+// ==========================================
+// طعم خونه - SCRIPT.JS
+// نسخه ساده و سازگار با HTML فعلی
+// ==========================================
+
+
+// ==========================================
+// DATABASE
+// ==========================================
 
 const recipes = {
-
     ghormeh: {
         name: "قورمه سبزی",
         emoji: "🍛",
@@ -16,12 +21,12 @@ const recipes = {
             "نمک و فلفل"
         ],
         steps: [
-            "پیاز را خرد و با کمی روغن سرخ کنید.",
-            "گوشت را اضافه کنید و تفت دهید.",
+            "پیاز را خرد کرده و با روغن تفت دهید.",
+            "گوشت را اضافه کرده و کمی سرخ کنید.",
             "سبزی سرخ شده را اضافه کنید.",
             "لوبیا و آب را اضافه کنید.",
-            "لیمو عمانی‌ها را اضافه کنید.",
-            "اجازه دهید خورشت حدود ۲ ساعت آرام بپزد."
+            "لیمو عمانی‌ها را به خورشت اضافه کنید.",
+            "اجازه دهید حدود دو ساعت آرام بپزد."
         ]
     },
 
@@ -60,7 +65,7 @@ const recipes = {
             "پیاز را رنده کنید.",
             "آب اضافی پیاز را بگیرید.",
             "گوشت و پیاز را کاملاً مخلوط کنید.",
-            "نمک و ادویه اضافه کنید.",
+            "نمک و ادویه را اضافه کنید.",
             "مواد را به سیخ بکشید.",
             "روی حرارت مناسب کباب کنید."
         ]
@@ -137,15 +142,14 @@ const recipes = {
             "رب انار",
             "مرغ",
             "پیاز",
-            "نمک",
-            "کمی شکر در صورت دلخواه"
+            "نمک"
         ],
         steps: [
             "گردو را آسیاب کنید.",
             "گردو را با آب روی حرارت قرار دهید.",
-            "مرغ را جداگانه تفت دهید.",
+            "مرغ را با پیاز تفت دهید.",
             "رب انار را اضافه کنید.",
-            "مرغ را داخل خورشت قرار دهید.",
+            "مرغ را به خورشت اضافه کنید.",
             "اجازه دهید خورشت آرام بپزد."
         ]
     },
@@ -166,99 +170,111 @@ const recipes = {
             "شیر و مواد مایع را اضافه کنید.",
             "آرد و پودر کاکائو را اضافه کنید.",
             "مواد را خوب مخلوط کنید.",
-            "داخل قالب بریزید.",
+            "مواد را داخل قالب بریزید.",
             "در فر بپزید."
         ]
     }
-
 };
 
 
-// ===============================
-// GET ELEMENTS
-// ===============================
+// ==========================================
+// ELEMENTS
+// ==========================================
 
-const recipeModal =
-    document.getElementById("recipeModal");
+const recipeModal = document.getElementById("recipeModal");
+const modalContent = document.getElementById("modalContent");
+const closeModal = document.getElementById("closeModal");
 
-const modalContent =
-    document.getElementById("modalContent");
+const favoritesModal = document.getElementById("favoritesModal");
+const favoritesButton = document.getElementById("favoritesButton");
+const closeFavorites = document.getElementById("closeFavorites");
+const favoritesList = document.getElementById("favoritesList");
+const favoriteCount = document.getElementById("favoriteCount");
 
-const closeModal =
-    document.getElementById("closeModal");
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const noResults = document.getElementById("noResults");
 
+const darkModeButton = document.getElementById("darkModeButton");
+const mobileMenuButton = document.getElementById("mobileMenuButton");
+const mobileMenu = document.getElementById("mobileMenu");
 
-const favoritesModal =
-    document.getElementById("favoritesModal");
+const randomFoodButton = document.getElementById("randomFoodButton");
+const randomFoodButtonTwo = document.getElementById("randomFoodButtonTwo");
 
-const favoritesButton =
-    document.getElementById("favoritesButton");
+const newsletterButton = document.getElementById("newsletterButton");
 
-const closeFavorites =
-    document.getElementById("closeFavorites");
+const toast = document.getElementById("toast");
 
-const favoritesList =
-    document.getElementById("favoritesList");
-
-const favoriteCount =
-    document.getElementById("favoriteCount");
-
-
-const searchInput =
-    document.getElementById("searchInput");
-
-const searchButton =
-    document.getElementById("searchButton");
-
-const noResults =
-    document.getElementById("noResults");
+const cards = document.querySelectorAll(".recipe-card");
+const filters = document.querySelectorAll(".filter");
+const quickSearches = document.querySelectorAll(".quick-search");
+const viewButtons = document.querySelectorAll(".view-recipe");
+const favoriteButtons = document.querySelectorAll(".favorite");
 
 
-const darkModeButton =
-    document.getElementById("darkModeButton");
-
-
-const toast =
-    document.getElementById("toast");
-
-
-// ===============================
+// ==========================================
 // FAVORITES
-// ===============================
+// ==========================================
 
-let favorites =
-    JSON.parse(
+let favorites = [];
+
+try {
+    favorites = JSON.parse(
         localStorage.getItem("favorites")
     ) || [];
+} catch (error) {
+    favorites = [];
+}
 
 
 function saveFavorites() {
-
     localStorage.setItem(
         "favorites",
         JSON.stringify(favorites)
     );
-
 }
 
 
 function updateFavoriteCount() {
+    if (favoriteCount) {
+        favoriteCount.textContent = favorites.length;
+    }
+}
 
-    favoriteCount.textContent =
-        favorites.length;
+
+function updateFavoriteButtons() {
+
+    favoriteButtons.forEach(function (button) {
+
+        const recipeId = button.dataset.recipe;
+
+        if (favorites.includes(recipeId)) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+
+    });
 
 }
 
 
+// ==========================================
+// TOAST
+// ==========================================
+
 function showToast(message) {
 
-    toast.textContent =
-        message;
+    if (!toast) {
+        return;
+    }
+
+    toast.textContent = message;
 
     toast.classList.add("show");
 
-
-    setTimeout(() => {
+    setTimeout(function () {
 
         toast.classList.remove("show");
 
@@ -267,285 +283,240 @@ function showToast(message) {
 }
 
 
-// ===============================
-// CARD RECIPE SYSTEM
-// ===============================
+// ==========================================
+// GET RECIPE FROM CARD
+// ==========================================
 
 function getCardRecipe(card) {
 
-    const recipeButton =
+    const button =
         card.querySelector(".view-recipe");
 
+    if (!button) {
+        return null;
+    }
 
     const recipeId =
-        recipeButton.dataset.recipe;
-
+        button.dataset.recipe;
 
     const cardName =
         card.dataset.name;
 
+    const foodImage =
+        card.querySelector(".food-image");
 
     const emoji =
-        card.querySelector(".food-image")
-            .textContent
-            .trim();
+        foodImage
+            ? foodImage.textContent.trim()
+            : "🍽️";
 
 
-    const databaseRecipe =
-        recipes[recipeId];
+    if (recipes[recipeId]) {
 
-
-    // اگر دستور موجود دقیقاً متعلق به همان غذا باشد
-    if (
-        databaseRecipe &&
-        databaseRecipe.name === cardName
-    ) {
-
-        return databaseRecipe;
+        return {
+            id: recipeId,
+            name: cardName || recipes[recipeId].name,
+            emoji: emoji || recipes[recipeId].emoji,
+            ingredients: recipes[recipeId].ingredients,
+            steps: recipes[recipeId].steps
+        };
 
     }
 
 
-    // برای تمام غذاهای اضافه شده
-    // یک دستور مستقل با نام همان غذا ساخته می‌شود
     return {
-
+        id: recipeId,
         name: cardName,
-
         emoji: emoji,
 
         ingredients: [
-
             "مواد اولیه مناسب برای " + cardName,
-
-            "مواد تازه مورد نیاز",
-
-            "نمک و فلفل به مقدار لازم",
-
+            "مواد تازه",
+            "نمک و فلفل",
             "ادویه مناسب",
-
-            "روغن یا کره در صورت نیاز"
-
+            "روغن یا کره"
         ],
 
         steps: [
-
-            "مواد لازم برای " + cardName + " را آماده کنید.",
-
-            "مواد اولیه را به اندازه مناسب خرد و آماده کنید.",
-
-            "مواد را طبق روش مناسب این غذا بپزید یا تفت دهید.",
-
-            "نمک و ادویه را اضافه کنید.",
-
-            "اجازه دهید غذا به خوبی آماده شود.",
-
-            cardName + " را سرو کنید. نوش جان! 😋"
-
+            "مواد لازم را آماده کنید.",
+            "مواد را خرد و آماده کنید.",
+            "مواد را با روش مناسب بپزید.",
+            "نمک و ادویه اضافه کنید.",
+            "اجازه دهید غذا کامل آماده شود.",
+            cardName + " را سرو کنید. نوش جان 😋"
         ]
-
     };
 
 }
 
 
-// ===============================
+// ==========================================
 // RENDER RECIPE
-// ===============================
+// ==========================================
 
 function renderRecipe(recipe) {
 
-    modalContent.innerHTML = `
-
-        <div class="recipe-modal-content">
-
-            <div class="recipe-modal-emoji">
-
-                ${recipe.emoji}
-
-            </div>
+    if (!modalContent || !recipe) {
+        return;
+    }
 
 
-            <h2>
+    let ingredientsHTML = "";
 
-                ${recipe.name}
+    recipe.ingredients.forEach(function (item) {
 
-            </h2>
+        ingredientsHTML +=
+            "<li>" +
+            item +
+            "</li>";
 
-
-            <h3>
-
-                🛒 مواد لازم
-
-            </h3>
+    });
 
 
-            <ul>
+    let stepsHTML = "";
 
-                ${recipe.ingredients.map(item => `
+    recipe.steps.forEach(function (step) {
 
-                    <li>${item}</li>
+        stepsHTML +=
+            "<li>" +
+            step +
+            "</li>";
 
-                `).join("")}
-
-            </ul>
-
-
-            <h3>
-
-                👩‍🍳 مراحل پخت
-
-            </h3>
+    });
 
 
-            <ol>
+    modalContent.innerHTML =
 
-                ${recipe.steps.map(step => `
+        '<div class="recipe-modal-content">' +
 
-                    <li>${step}</li>
+        '<div class="recipe-modal-emoji">' +
+        recipe.emoji +
+        '</div>' +
 
-                `).join("")}
+        '<h2>' +
+        recipe.name +
+        '</h2>' +
 
-            </ol>
+        '<h3>🛒 مواد لازم</h3>' +
 
+        '<ul>' +
+        ingredientsHTML +
+        '</ul>' +
 
-        </div>
+        '<h3>👩‍🍳 مراحل پخت</h3>' +
 
-    `;
+        '<ol>' +
+        stepsHTML +
+        '</ol>' +
+
+        '</div>';
 
 }
 
 
-// ===============================
-// VIEW RECIPE
-// ===============================
+// ==========================================
+// OPEN RECIPE
+// ==========================================
 
-const viewButtons =
-    document.querySelectorAll(".view-recipe");
+function openRecipe(recipe) {
+
+    if (!recipeModal) {
+        return;
+    }
+
+    renderRecipe(recipe);
+
+    recipeModal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+}
 
 
-viewButtons.forEach(button => {
+// ==========================================
+// VIEW RECIPE BUTTONS
+// ==========================================
 
-    button.addEventListener("click", () => {
+viewButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
 
         const card =
             button.closest(".recipe-card");
 
 
-        const recipe =
-            getCardRecipe(card);
+        if (card) {
+
+            const recipe =
+                getCardRecipe(card);
+
+            if (recipe) {
+                openRecipe(recipe);
+            }
+
+            return;
+        }
 
 
-        renderRecipe(recipe);
+        const recipeId =
+            button.dataset.recipe;
 
 
-        recipeModal.classList.add("show");
+        if (recipes[recipeId]) {
 
-        document.body.style.overflow =
-            "hidden";
+            openRecipe({
+                id: recipeId,
+                name: recipes[recipeId].name,
+                emoji: recipes[recipeId].emoji,
+                ingredients: recipes[recipeId].ingredients,
+                steps: recipes[recipeId].steps
+            });
+
+        }
 
     });
 
 });
 
 
-// ===============================
-// CLOSE RECIPE MODAL
-// ===============================
-
-closeModal.addEventListener("click", () => {
-
-    recipeModal.classList.remove("show");
-
-    document.body.style.overflow =
-        "auto";
-
-});
-
-
-recipeModal
-    .querySelector(".modal-overlay")
-    .addEventListener("click", () => {
-
-        recipeModal.classList.remove("show");
-
-        document.body.style.overflow =
-            "auto";
-
-    });
-
-
-// ===============================
+// ==========================================
 // FAVORITE BUTTONS
-// ===============================
+// ==========================================
 
-const favoriteButtons =
-    document.querySelectorAll(".favorite");
+favoriteButtons.forEach(function (button) {
 
+    button.addEventListener("click", function () {
 
-favoriteButtons.forEach(button => {
-
-    const card =
-        button.closest(".recipe-card");
+        const recipeId =
+            button.dataset.recipe;
 
 
-    // شناسه یکتا برای هر غذا
-    const recipeId =
-        card.dataset.name;
+        if (!recipeId) {
+            return;
+        }
 
 
-    // اطلاعات غذا را ذخیره می‌کنیم
-    // تا در علاقه‌مندی‌ها هم درست نمایش داده شود
-
-    if (
-        !recipes[recipeId]
-    ) {
-
-        recipes[recipeId] =
-            getCardRecipe(card);
-
-    }
-
-
-    if (
-        favorites.includes(recipeId)
-    ) {
-
-        button.classList.add("active");
-
-    }
-
-
-    button.addEventListener("click", () => {
-
-
-        if (
-            favorites.includes(recipeId)
-        ) {
-
+        if (favorites.includes(recipeId)) {
 
             favorites =
-                favorites.filter(
-                    item => item !== recipeId
-                );
+                favorites.filter(function (id) {
+
+                    return id !== recipeId;
+
+                });
 
 
             button.classList.remove("active");
-
 
             showToast(
                 "از علاقه‌مندی‌ها حذف شد 💔"
             );
 
-
         } else {
-
 
             favorites.push(recipeId);
 
-
             button.classList.add("active");
-
 
             showToast(
                 "به علاقه‌مندی‌ها اضافه شد ❤️"
@@ -563,78 +534,60 @@ favoriteButtons.forEach(button => {
 });
 
 
-// ===============================
-// FAVORITES MODAL
-// ===============================
+// ==========================================
+// OPEN FAVORITES
+// ==========================================
 
-favoritesButton.addEventListener("click", () => {
+function renderFavorites() {
 
-    if (
-        favorites.length === 0
-    ) {
-
-        favoritesList.innerHTML = `
-
-            <p style="text-align:center; color: var(--light-text);">
-
-                هنوز غذایی به علاقه‌مندی‌ها اضافه نکردی ❤️
-
-            </p>
-
-        `;
-
-    } else {
-
-        favoritesList.innerHTML =
-            favorites.map(id => {
-
-
-                const recipe =
-                    recipes[id];
-
-
-                // اگر اطلاعات غذا به هر دلیلی موجود نبود
-                if (!recipe) {
-
-                    return "";
-
-                }
-
-
-                return `
-
-                    <div class="favorite-item">
-
-                        <span>
-
-                            ${recipe.emoji}
-                            ${recipe.name}
-
-                        </span>
-
-
-                        <button
-                            class="view-favorite-recipe"
-                            data-id="${id}"
-                        >
-
-                            مشاهده
-
-                        </button>
-
-                    </div>
-
-                `;
-
-            }).join("");
-
+    if (!favoritesList) {
+        return;
     }
 
 
-    favoritesModal.classList.add("show");
+    if (favorites.length === 0) {
 
-    document.body.style.overflow =
-        "hidden";
+        favoritesList.innerHTML =
+            "<p style='text-align:center; padding:20px;'>" +
+            "هنوز غذایی به علاقه‌مندی‌ها اضافه نکردی ❤️" +
+            "</p>";
+
+        return;
+    }
+
+
+    let html = "";
+
+
+    favorites.forEach(function (id) {
+
+        if (!recipes[id]) {
+            return;
+        }
+
+
+        html +=
+
+            '<div class="favorite-item">' +
+
+            '<span>' +
+            recipes[id].emoji +
+            " " +
+            recipes[id].name +
+            '</span>' +
+
+            '<button class="view-favorite-recipe" data-id="' +
+            id +
+            '" type="button">' +
+            'مشاهده دستور' +
+            '</button>' +
+
+            '</div>';
+
+    });
+
+
+    favoritesList.innerHTML = html;
 
 
     const favoriteRecipeButtons =
@@ -643,153 +596,248 @@ favoritesButton.addEventListener("click", () => {
         );
 
 
-    favoriteRecipeButtons.forEach(button => {
+    favoriteRecipeButtons.forEach(function (button) {
 
-        button.addEventListener(
+        button.addEventListener("click", function () {
+
+            const id =
+                button.dataset.id;
+
+
+            if (!recipes[id]) {
+                return;
+            }
+
+
+            if (favoritesModal) {
+                favoritesModal.classList.remove("show");
+            }
+
+
+            openRecipe({
+                id: id,
+                name: recipes[id].name,
+                emoji: recipes[id].emoji,
+                ingredients: recipes[id].ingredients,
+                steps: recipes[id].steps
+            });
+
+        });
+
+    });
+
+}
+
+
+if (favoritesButton) {
+
+    favoritesButton.addEventListener(
+        "click",
+        function () {
+
+            renderFavorites();
+
+
+            if (favoritesModal) {
+
+                favoritesModal.classList.add("show");
+
+                document.body.style.overflow =
+                    "hidden";
+
+            }
+
+        }
+    );
+
+}
+
+
+// ==========================================
+// CLOSE MODALS
+// ==========================================
+
+if (closeModal) {
+
+    closeModal.addEventListener(
+        "click",
+        function () {
+
+            recipeModal.classList.remove("show");
+
+            document.body.style.overflow =
+                "auto";
+
+        }
+    );
+
+}
+
+
+if (closeFavorites) {
+
+    closeFavorites.addEventListener(
+        "click",
+        function () {
+
+            favoritesModal.classList.remove(
+                "show"
+            );
+
+            document.body.style.overflow =
+                "auto";
+
+        }
+    );
+
+}
+
+
+// ==========================================
+// MODAL OVERLAYS
+// ==========================================
+
+if (recipeModal) {
+
+    const overlay =
+        recipeModal.querySelector(
+            ".modal-overlay"
+        );
+
+
+    if (overlay) {
+
+        overlay.addEventListener(
             "click",
-            () => {
+            function () {
 
-                const id =
-                    button.dataset.id;
+                recipeModal.classList.remove(
+                    "show"
+                );
+
+                document.body.style.overflow =
+                    "auto";
+
+            }
+        );
+
+    }
+
+}
 
 
-                const recipe =
-                    recipes[id];
+if (favoritesModal) {
+
+    const overlay =
+        favoritesModal.querySelector(
+            ".modal-overlay"
+        );
 
 
-                if (!recipe) {
+    if (overlay) {
 
-                    return;
-
-                }
-
+        overlay.addEventListener(
+            "click",
+            function () {
 
                 favoritesModal.classList.remove(
                     "show"
                 );
 
+                document.body.style.overflow =
+                    "auto";
 
-                renderRecipe(recipe);
+            }
+        );
+
+    }
+
+}
 
 
-                recipeModal.classList.add(
-                    "show"
+// ==========================================
+// FILTERS
+// ==========================================
+
+filters.forEach(function (filter) {
+
+    filter.addEventListener(
+        "click",
+        function () {
+
+            filters.forEach(function (item) {
+
+                item.classList.remove(
+                    "active"
                 );
 
-            }
-        );
-
-    });
-
-});
-
-
-// ===============================
-// CLOSE FAVORITES
-// ===============================
-
-closeFavorites.addEventListener("click", () => {
-
-    favoritesModal.classList.remove(
-        "show"
-    );
-
-    document.body.style.overflow =
-        "auto";
-
-});
-
-
-favoritesModal
-    .querySelector(".modal-overlay")
-    .addEventListener("click", () => {
-
-        favoritesModal.classList.remove(
-            "show"
-        );
-
-        document.body.style.overflow =
-            "auto";
-
-    });
-
-
-// ===============================
-// FILTERS
-// ===============================
-
-const filters =
-    document.querySelectorAll(".filter");
-
-
-const cards =
-    document.querySelectorAll(".recipe-card");
-
-
-filters.forEach(filter => {
-
-    filter.addEventListener("click", () => {
-
-
-        filters.forEach(item => {
-
-            item.classList.remove("active");
-
-        });
-
-
-        filter.classList.add("active");
-
-
-        const category =
-            filter.dataset.category;
-
-
-        let visibleCount = 0;
-
-
-        cards.forEach(card => {
-
-
-            if (
-                category === "all" ||
-                card.dataset.category === category
-            ) {
-
-                card.classList.remove("hidden");
-
-                visibleCount++;
-
-            } else {
-
-                card.classList.add("hidden");
-
-            }
-
-        });
-
-
-        noResults.style.display =
-            visibleCount === 0
-                ? "block"
-                : "none";
-
-
-        document.getElementById("recipes")
-            .scrollIntoView({
-                behavior: "smooth"
             });
 
-    });
+
+            filter.classList.add(
+                "active"
+            );
+
+
+            const category =
+                filter.dataset.category;
+
+
+            let visibleCount = 0;
+
+
+            cards.forEach(function (card) {
+
+                if (
+                    category === "all" ||
+                    card.dataset.category === category
+                ) {
+
+                    card.classList.remove(
+                        "hidden"
+                    );
+
+                    visibleCount++;
+
+                } else {
+
+                    card.classList.add(
+                        "hidden"
+                    );
+
+                }
+
+            });
+
+
+            if (noResults) {
+
+                if (visibleCount === 0) {
+                    noResults.style.display =
+                        "block";
+                } else {
+                    noResults.style.display =
+                        "none";
+                }
+
+            }
+
+        }
+    );
 
 });
 
 
-// ===============================
+// ==========================================
 // SEARCH
-// ===============================
+// ==========================================
 
 function searchRecipes() {
+
+    if (!searchInput) {
+        return;
+    }
+
 
     const searchText =
         searchInput.value
@@ -800,374 +848,380 @@ function searchRecipes() {
     let visibleCount = 0;
 
 
-    cards.forEach(card => {
+    cards.forEach(function (card) {
 
         const name =
-            card.dataset.name
+            (card.dataset.name || "")
                 .toLowerCase();
 
 
         const category =
-            card.dataset.category
+            (card.dataset.category || "")
                 .toLowerCase();
 
 
         if (
+            searchText === "" ||
             name.includes(searchText) ||
             category.includes(searchText)
         ) {
 
-            card.classList.remove("hidden");
+            card.classList.remove(
+                "hidden"
+            );
 
             visibleCount++;
 
         } else {
 
-            card.classList.add("hidden");
+            card.classList.add(
+                "hidden"
+            );
 
         }
 
     });
 
 
-    noResults.style.display =
-        visibleCount === 0
-            ? "block"
-            : "none";
+    if (noResults) {
+
+        if (visibleCount === 0) {
+            noResults.style.display =
+                "block";
+        } else {
+            noResults.style.display =
+                "none";
+        }
+
+    }
 
 }
 
 
-searchButton.addEventListener(
-    "click",
-    searchRecipes
-);
+// ==========================================
+// SEARCH BUTTON
+// ==========================================
 
+if (searchButton) {
 
-searchInput.addEventListener(
-    "input",
-    searchRecipes
-);
-
-
-searchInput.addEventListener(
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Enter"
-        ) {
+    searchButton.addEventListener(
+        "click",
+        function () {
 
             searchRecipes();
 
+
+            const recipesSection =
+                document.getElementById(
+                    "recipes"
+                );
+
+
+            if (recipesSection) {
+
+                recipesSection.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
         }
+    );
 
-    }
-);
+}
 
 
-// ===============================
-// QUICK SEARCH
-// ===============================
+// ==========================================
+// SEARCH INPUT
+// ==========================================
 
-const quickSearches =
-    document.querySelectorAll(
-        ".quick-search"
+if (searchInput) {
+
+    searchInput.addEventListener(
+        "input",
+        searchRecipes
     );
 
 
-quickSearches.forEach(button => {
+    searchInput.addEventListener(
+        "keydown",
+        function (event) {
 
-    button.addEventListener("click", () => {
+            if (event.key === "Enter") {
 
-        searchInput.value =
-            button.dataset.search;
+                event.preventDefault();
+
+                searchRecipes();
+
+            }
+
+        }
+    );
+
+}
 
 
-        searchRecipes();
+// ==========================================
+// QUICK SEARCH
+// ==========================================
+
+quickSearches.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            if (!searchInput) {
+                return;
+            }
 
 
-        document
-            .getElementById("recipes")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
+            searchInput.value =
+                button.dataset.search || "";
 
-    });
+
+            searchRecipes();
+
+
+            const recipesSection =
+                document.getElementById(
+                    "recipes"
+                );
+
+
+            if (recipesSection) {
+
+                recipesSection.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+        }
+    );
 
 });
 
 
-// ===============================
+// ==========================================
 // RANDOM FOOD
-// ===============================
+// ==========================================
 
 function showRandomFood() {
-
-
-    // از تمام کارت‌های موجود در سایت انتخاب می‌کند
 
     const allCards =
         Array.from(cards);
 
 
-    const randomCard =
-        allCards[
-            Math.floor(
-                Math.random() *
-                allCards.length
-            )
-        ];
+    if (allCards.length === 0) {
+        return;
+    }
 
 
-    const recipe =
-        getCardRecipe(
-            randomCard
+    const randomIndex =
+        Math.floor(
+            Math.random() *
+            allCards.length
         );
 
 
-    modalContent.innerHTML = `
-
-        <div class="recipe-modal-content">
-
-            <div class="recipe-modal-emoji">
-
-                🎲
-
-            </div>
+    const randomCard =
+        allCards[randomIndex];
 
 
-            <h2>
-
-                پیشنهاد امروز ما
-
-            </h2>
+    const recipe =
+        getCardRecipe(randomCard);
 
 
-            <div class="recipe-modal-emoji">
+    if (recipe) {
 
-                ${recipe.emoji}
+        openRecipe(recipe);
 
-            </div>
-
-
-            <h2>
-
-                ${recipe.name}
-
-            </h2>
-
-
-            <p style="text-align:center; color: var(--light-text);">
-
-                امروز این غذا را امتحان کن! 😋
-
-            </p>
-
-
-            <h3>
-
-                🛒 مواد لازم
-
-            </h3>
-
-
-            <ul>
-
-                ${recipe.ingredients.map(item => `
-
-                    <li>${item}</li>
-
-                `).join("")}
-
-            </ul>
-
-
-            <h3>
-
-                👩‍🍳 مراحل پخت
-
-            </h3>
-
-
-            <ol>
-
-                ${recipe.steps.map(step => `
-
-                    <li>${step}</li>
-
-                `).join("")}
-
-            </ol>
-
-
-        </div>
-
-    `;
-
-
-    recipeModal.classList.add("show");
-
-
-    document.body.style.overflow =
-        "hidden";
+    }
 
 }
 
 
-document
-    .getElementById("randomFoodButton")
-    .addEventListener(
+if (randomFoodButton) {
+
+    randomFoodButton.addEventListener(
         "click",
         showRandomFood
     );
 
+}
 
-document
-    .getElementById("randomFoodButtonTwo")
-    .addEventListener(
+
+if (randomFoodButtonTwo) {
+
+    randomFoodButtonTwo.addEventListener(
         "click",
         showRandomFood
     );
 
+}
 
-// ===============================
+
+// ==========================================
 // DARK MODE
-// ===============================
+// ==========================================
 
 const savedTheme =
     localStorage.getItem("theme");
 
 
-if (
-    savedTheme === "dark"
-) {
+if (savedTheme === "dark") {
 
     document.body.classList.add(
         "dark-mode"
     );
 
 
-    darkModeButton.textContent =
-        "☀️";
+    if (darkModeButton) {
+
+        darkModeButton.textContent =
+            "☀️";
+
+    }
 
 }
 
 
-darkModeButton.addEventListener(
-    "click",
-    () => {
+if (darkModeButton) {
 
+    darkModeButton.addEventListener(
+        "click",
+        function () {
 
-        document.body.classList.toggle(
-            "dark-mode"
-        );
-
-
-        if (
-            document.body.classList.contains(
+            document.body.classList.toggle(
                 "dark-mode"
-            )
-        ) {
-
-
-            localStorage.setItem(
-                "theme",
-                "dark"
             );
 
 
-            darkModeButton.textContent =
-                "☀️";
+            if (
+                document.body.classList.contains(
+                    "dark-mode"
+                )
+            ) {
 
+                localStorage.setItem(
+                    "theme",
+                    "dark"
+                );
 
-        } else {
+                darkModeButton.textContent =
+                    "☀️";
 
+            } else {
 
-            localStorage.setItem(
-                "theme",
-                "light"
-            );
+                localStorage.setItem(
+                    "theme",
+                    "light"
+                );
 
+                darkModeButton.textContent =
+                    "🌙";
 
-            darkModeButton.textContent =
-                "🌙";
+            }
 
         }
+    );
 
-    }
-);
+}
 
 
-// ===============================
+// ==========================================
 // MOBILE MENU
-// ===============================
+// ==========================================
 
-const mobileMenuButton =
-    document.getElementById(
-        "mobileMenuButton"
-    );
+if (
+    mobileMenuButton &&
+    mobileMenu
+) {
 
-
-const mobileMenu =
-    document.getElementById(
-        "mobileMenu"
-    );
-
-
-mobileMenuButton.addEventListener(
-    "click",
-    () => {
-
-        mobileMenu.classList.toggle(
-            "show"
-        );
-
-    }
-);
-
-
-const mobileLinks =
-    mobileMenu.querySelectorAll("a");
-
-
-mobileLinks.forEach(link => {
-
-    link.addEventListener(
+    mobileMenuButton.addEventListener(
         "click",
-        () => {
+        function () {
 
-            mobileMenu.classList.remove(
+            mobileMenu.classList.toggle(
                 "show"
             );
 
         }
     );
 
-});
+
+    const mobileLinks =
+        mobileMenu.querySelectorAll(
+            "a"
+        );
 
 
-// ===============================
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mobileMenu.classList.remove(
+                    "show"
+                );
+
+            }
+        );
+
+    });
+
+}
+
+
+// ==========================================
+// NEWSLETTER
+// بدون ایمیل و بدون ثبت نام
+// ==========================================
+
+if (newsletterButton) {
+
+    newsletterButton.addEventListener(
+        "click",
+        function () {
+
+            showToast(
+                "❤️ ممنون که همراه طعم خونه هستی!"
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================
 // ESC KEY
-// ===============================
+// ==========================================
 
 document.addEventListener(
     "keydown",
-    event => {
+    function (event) {
 
-        if (
-            event.key === "Escape"
-        ) {
+        if (event.key === "Escape") {
+
+            if (recipeModal) {
+
+                recipeModal.classList.remove(
+                    "show"
+                );
+
+            }
 
 
-            recipeModal.classList.remove(
-                "show"
-            );
+            if (favoritesModal) {
 
+                favoritesModal.classList.remove(
+                    "show"
+                );
 
-            favoritesModal.classList.remove(
-                "show"
-            );
+            }
 
 
             document.body.style.overflow =
@@ -1179,13 +1233,21 @@ document.addEventListener(
 );
 
 
-// ===============================
+// ==========================================
 // INITIALIZE
-// ===============================
+// ==========================================
 
 updateFavoriteCount();
 
+updateFavoriteButtons();
+
+if (noResults) {
+
+    noResults.style.display =
+        "none";
+
+}
 
 console.log(
-    "🍳 سایت طعم خونه با موفقیت اجرا شد!"
+    "🍳 طعم خونه آماده است!"
 );
