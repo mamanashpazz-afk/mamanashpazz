@@ -12,29 +12,11 @@
     content="width=device-width, initial-scale=1.0"
 >
 
-<meta
-    name="description"
-    content="طعم خونه - دستور غذاهای خوشمزه، خانگی و ساده"
->
+<title>مامان آشپز</title>
 
-<meta
-    name="theme-color"
-    content="#ff6b35"
->
-
-<title>طعم خونه | دستور غذاهای خوشمزه</title>
-
-<!-- فاوآیکون -->
-<link
-    rel="icon"
-    type="image/png"
-    href="favicon.png"
->
-
-<!-- فایل CSS -->
 <link
     rel="stylesheet"
-    href="./style.css"
+    href="style.css"
 >
 ```
 
@@ -43,2097 +25,1081 @@
 <body>
 
 ```
-<!-- =========================
-     HEADER
-========================== -->
+<!-- ========================= -->
+<!-- قسمت ۱: هدر سایت -->
+<!-- ========================= -->
 
 <header class="header">
 
-    <div class="container header-container">
+    <div class="logo">
 
-        <a href="#home" class="logo">
-            <span class="logo-icon">🍳</span>
-            <span>طعم خونه</span>
-        </a>
+        <span class="logo-icon">
+            👩‍🍳
+        </span>
 
-
-        <nav class="nav">
-
-            <a href="#home">🏠 خانه</a>
-            <a href="#recipes">🍽️ غذاها</a>
-            <a href="#categories">📂 دسته‌بندی</a>
-            <a href="#popular">🔥 محبوب‌ها</a>
-            <a href="#tips">👨‍🍳 نکات آشپزی</a>
-            <a href="#about">❤️ درباره ما</a>
-
-        </nav>
-
-
-        <div class="header-buttons">
-
-            <button
-                id="darkModeButton"
-                class="header-button"
-                type="button"
-                title="حالت تاریک"
-            >
-                🌙
-            </button>
-
-
-            <button
-                id="favoritesButton"
-                class="header-button favorite-header"
-                type="button"
-                title="علاقه‌مندی‌ها"
-            >
-
-                ❤️
-
-                <span id="favoriteCount">
-                    0
-                </span>
-
-            </button>
-
-
-            <button
-                id="mobileMenuButton"
-                class="mobile-button"
-                type="button"
-            >
-                ☰
-            </button>
-
-        </div>
+        <h1>
+            مامان آشپز
+        </h1>
 
     </div>
 
 
-    <!-- MOBILE MENU -->
+    <p class="subtitle">
 
-    <div
-        id="mobileMenu"
-        class="mobile-menu"
-    >
+        خوشمزه‌ترین غذاهای ایرانی،
+        با عشق برای شما ❤️
 
-        <a href="#home">🏠 خانه</a>
-        <a href="#recipes">🍽️ دستور غذاها</a>
-        <a href="#categories">📂 دسته‌بندی‌ها</a>
-        <a href="#popular">🔥 محبوب‌ترین‌ها</a>
-        <a href="#tips">👨‍🍳 نکات آشپزی</a>
-        <a href="#about">❤️ درباره سایت</a>
-
-    </div>
+    </p>
 
 </header>
 
 
 
-<!-- =========================
-     MAIN
-========================== -->
+<!-- ========================= -->
+<!-- قسمت ۲: بخش جستجو -->
+<!-- ========================= -->
 
-<main id="home">
+<section class="hero">
 
+    <div class="hero-content">
 
+        <h2>
+            امروز چی بپزم؟ 🍲
+        </h2>
 
-    <!-- =========================
-         HERO
-    ========================== -->
 
-    <section class="hero">
+        <p>
+            غذای مورد نظرت را جستجو کن
+            و دستور پخت آن را ببین.
+        </p>
 
-        <div class="container hero-container">
 
+        <div class="search-box">
 
-            <div class="hero-content">
-
-                <div class="hero-badge">
-                    👩‍🍳 آشپزی با عشق و طعم واقعی
-                </div>
-
-
-                <h1>
-
-                    هر روز یک
-
-                    <span>
-                        طعم جدید
-                    </span>
-
-                    🍳
-
-                </h1>
-
-
-                <p>
-
-                    از غذاهای اصیل ایرانی گرفته تا پیتزا،
-                    پاستا، دسر و غذاهای بین‌المللی؛
-                    همه چیز برای یک آشپزی خوشمزه اینجاست!
-
-                </p>
-
-
-                <div class="hero-actions">
-
-                    <a
-                        href="#recipes"
-                        class="primary-button"
-                    >
-                        🍛 شروع آشپزی
-                    </a>
-
-
-                    <button
-                        id="randomFoodButton"
-                        class="secondary-button"
-                        type="button"
-                    >
-                        🎲 سورپرایزم کن
-                    </button>
-
-                </div>
-
-
-                <div class="hero-stats">
-
-                    <div>
-
-                        <strong>
-                            +۲۰
-                        </strong>
-
-                        <span>
-                            دستور غذا
-                        </span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            +۵
-                        </strong>
-
-                        <span>
-                            دسته‌بندی
-                        </span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            ∞
-                        </strong>
-
-                        <span>
-                            عشق به غذا
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="hero-visual">
-
-                <div class="main-food">
-                    🍲
-                </div>
-
-                <div class="floating floating-one">
-                    🍕
-                </div>
-
-                <div class="floating floating-two">
-                    🍔
-                </div>
-
-                <div class="floating floating-three">
-                    🍰
-                </div>
-
-                <div class="floating floating-four">
-                    🥗
-                </div>
-
-                <div class="floating">
-                    🍝
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         QUICK INFO
-    ========================== -->
-
-    <section class="info-section">
-
-        <div class="container">
-
-            <div class="info-grid">
-
-
-                <div class="info-card">
-
-                    <div>🍳</div>
-
-                    <h3>
-                        دستورهای کامل
-                    </h3>
-
-                    <p>
-                        توضیح مرحله به مرحله همراه با زمان و حرارت مناسب.
-                    </p>
-
-                </div>
-
-
-
-                <div class="info-card">
-
-                    <div>⏱️</div>
-
-                    <h3>
-                        زمان‌بندی دقیق
-                    </h3>
-
-                    <p>
-                        زمان تقریبی آماده‌سازی و پخت هر غذا را ببین.
-                    </p>
-
-                </div>
-
-
-
-                <div class="info-card">
-
-                    <div>🔥</div>
-
-                    <h3>
-                        حرارت مناسب
-                    </h3>
-
-                    <p>
-                        در هر مرحله بدان شعله باید کم، متوسط یا زیاد باشد.
-                    </p>
-
-                </div>
-
-
-
-                <div class="info-card">
-
-                    <div>❤️</div>
-
-                    <h3>
-                        ذخیره علاقه‌مندی‌ها
-                    </h3>
-
-                    <p>
-                        غذاهای مورد علاقه‌ات را ذخیره کن.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         SEARCH
-    ========================== -->
-
-    <section class="search-section">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
-                    🔎 جستجوی غذا
-                </span>
-
-                <h2>
-                    امروز هوس چی کردی؟
-                </h2>
-
-                <p>
-                    اسم غذای مورد علاقه‌ات را وارد کن.
-                </p>
-
-            </div>
-
-
-
-            <div class="search-box">
-
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="مثلاً قیمه، قورمه سبزی، پیتزا یا کیک..."
-                >
-
-                <button
-                    id="searchButton"
-                    type="button"
-                >
-                    🔍 جستجو
-                </button>
-
-            </div>
-
-
-
-            <div class="quick-searches">
-
-                <button
-                    class="quick-search"
-                    data-search="ایرانی"
-                    type="button"
-                >
-                    🇮🇷 ایرانی
-                </button>
-
-
-                <button
-                    class="quick-search"
-                    data-search="پیتزا"
-                    type="button"
-                >
-                    🍕 پیتزا
-                </button>
-
-
-                <button
-                    class="quick-search"
-                    data-search="پاستا"
-                    type="button"
-                >
-                    🍝 پاستا
-                </button>
-
-
-                <button
-                    class="quick-search"
-                    data-search="کباب"
-                    type="button"
-                >
-                    🔥 کباب
-                </button>
-
-
-                <button
-                    class="quick-search"
-                    data-search="دسر"
-                    type="button"
-                >
-                    🍰 دسر
-                </button>
-
-
-                <button
-                    class="quick-search"
-                    data-search="مرغ"
-                    type="button"
-                >
-                    🍗 مرغ
-                </button>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         CATEGORIES
-    ========================== -->
-
-    <section
-        id="categories"
-        class="categories-section"
-    >
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
-                    📂 دسته‌بندی‌ها
-                </span>
-
-                <h2>
-                    هر سلیقه‌ای، یک طعم
-                </h2>
-
-                <p>
-                    غذای مورد علاقه‌ات را از دسته‌بندی زیر انتخاب کن.
-                </p>
-
-            </div>
-
-
-
-            <div class="categories-grid">
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🇮🇷</div>
-
-                    <h3>
-                        غذاهای ایرانی
-                    </h3>
-
-                    <p>
-                        خورشت، پلو و غذاهای اصیل
-                    </p>
-
-                </a>
-
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🍔</div>
-
-                    <h3>
-                        فست فود
-                    </h3>
-
-                    <p>
-                        پیتزا، برگر و ساندویچ
-                    </p>
-
-                </a>
-
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🍝</div>
-
-                    <h3>
-                        بین‌المللی
-                    </h3>
-
-                    <p>
-                        غذاهای خوشمزه جهان
-                    </p>
-
-                </a>
-
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🔥</div>
-
-                    <h3>
-                        کباب
-                    </h3>
-
-                    <p>
-                        کباب‌های ایرانی و خانگی
-                    </p>
-
-                </a>
-
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🍰</div>
-
-                    <h3>
-                        دسر
-                    </h3>
-
-                    <p>
-                        شیرینی و دسرهای خوشمزه
-                    </p>
-
-                </a>
-
-
-
-                <a
-                    href="#recipes"
-                    class="category-card"
-                >
-
-                    <div>🥗</div>
-
-                    <h3>
-                        غذای سبک
-                    </h3>
-
-                    <p>
-                        انتخاب‌های ساده و سریع
-                    </p>
-
-                </a>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         POPULAR
-    ========================== -->
-
-    <section
-        id="popular"
-        class="popular-section"
-    >
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
-                    🔥 محبوب‌ترین‌ها
-                </span>
-
-                <h2>
-                    انتخاب آشپزهای طعم خونه
-                </h2>
-
-                <p>
-                    این غذاها همیشه طرفدار دارند!
-                </p>
-
-            </div>
-
-
-
-            <div class="popular-grid">
-
-
-                <div class="popular-card">
-
-                    <div class="popular-rank">
-                        #۱
-                    </div>
-
-                    <div class="popular-emoji">
-                        🍛
-                    </div>
-
-                    <h3>
-                        قورمه سبزی
-                    </h3>
-
-                    <p>
-                        یکی از محبوب‌ترین غذاهای ایرانی.
-                    </p>
-
-                    <button
-                        class="view-recipe"
-                        data-recipe="ghormeh"
-                        type="button"
-                    >
-                        مشاهده دستور
-                    </button>
-
-                </div>
-
-
-
-                <div class="popular-card">
-
-                    <div class="popular-rank">
-                        #۲
-                    </div>
-
-                    <div class="popular-emoji">
-                        🍲
-                    </div>
-
-                    <h3>
-                        قیمه
-                    </h3>
-
-                    <p>
-                        خورشت خوشمزه ایرانی با لپه و سیب‌زمینی.
-                    </p>
-
-                    <button
-                        class="view-recipe"
-                        data-recipe="gheimeh"
-                        type="button"
-                    >
-                        مشاهده دستور
-                    </button>
-
-                </div>
-
-
-
-                <div class="popular-card">
-
-                    <div class="popular-rank">
-                        #۳
-                    </div>
-
-                    <div class="popular-emoji">
-                        🥩
-                    </div>
-
-                    <h3>
-                        کباب کوبیده
-                    </h3>
-
-                    <p>
-                        طعم اصیل کباب ایرانی.
-                    </p>
-
-                    <button
-                        class="view-recipe"
-                        data-recipe="kabab"
-                        type="button"
-                    >
-                        مشاهده دستور
-                    </button>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         RECIPES
-    ========================== -->
-
-    <section
-        id="recipes"
-        class="recipes-section"
-    >
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
-                    🍽️ دستور غذاها
-                </span>
-
-                <h2>
-                    امروز چی دوست داری بپزی؟
-                </h2>
-
-                <p>
-                    غذای مورد علاقه‌ات را انتخاب کن و دستور کامل آن را ببین.
-                </p>
-
-            </div>
-
-
-
-            <!-- FILTERS -->
-
-            <div class="filters">
-
-                <button
-                    class="filter active"
-                    data-category="all"
-                    type="button"
-                >
-                    🍽️ همه
-                </button>
-
-                <button
-                    class="filter"
-                    data-category="ایرانی"
-                    type="button"
-                >
-                    🇮🇷 ایرانی
-                </button>
-
-                <button
-                    class="filter"
-                    data-category="فست فود"
-                    type="button"
-                >
-                    🍔 فست فود
-                </button>
-
-                <button
-                    class="filter"
-                    data-category="فرنگی"
-                    type="button"
-                >
-                    🌍 بین‌المللی
-                </button>
-
-                <button
-                    class="filter"
-                    data-category="کباب"
-                    type="button"
-                >
-                    🔥 کباب
-                </button>
-
-                <button
-                    class="filter"
-                    data-category="دسر"
-                    type="button"
-                >
-                    🍰 دسر
-                </button>
-
-            </div>
-
-
-
-            <!-- RECIPES GRID -->
-
-            <div class="recipes-grid">
-
-
-
-                <!-- قورمه سبزی -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="قورمه سبزی"
-                >
-
-                    <div class="food-image green">
-                        🍛
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            قورمه سبزی
-                        </h3>
-
-                        <p>
-                            خورشت اصیل ایرانی با سبزی، لوبیا و لیمو عمانی.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ حدود ۳ ساعت
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="ghormeh"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="ghormeh"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- زرشک پلو -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="زرشک پلو با مرغ"
-                >
-
-                    <div class="food-image yellow">
-                        🍗
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            زرشک پلو با مرغ
-                        </h3>
-
-                        <p>
-                            ترکیب خوش‌رنگ برنج زعفرانی، مرغ و زرشک.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۹۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="zereshk"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="zereshk"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- کباب -->
-
-                <article
-                    class="recipe-card"
-                    data-category="کباب"
-                    data-name="کباب کوبیده"
-                >
-
-                    <div class="food-image red">
-                        🥩
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            کباب
-                        </span>
-
-                        <h3>
-                            کباب کوبیده
-                        </h3>
-
-                        <p>
-                            یکی از محبوب‌ترین غذاهای ایرانی با طعمی فوق‌العاده.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۴۵ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="kabab"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="kabab"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- پیتزا -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فست فود"
-                    data-name="پیتزا خانگی"
-                >
-
-                    <div class="food-image orange">
-                        🍕
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            فست فود
-                        </span>
-
-                        <h3>
-                            پیتزا خانگی
-                        </h3>
-
-                        <p>
-                            پیتزای خوشمزه خانگی با پنیر کش‌دار.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۶۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="pizza"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="pizza"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- پاستا -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فرنگی"
-                    data-name="پاستا آلفردو"
-                >
-
-                    <div class="food-image cream">
-                        🍝
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            بین‌المللی
-                        </span>
-
-                        <h3>
-                            پاستا آلفردو
-                        </h3>
-
-                        <p>
-                            پاستای خامه‌ای خوشمزه با مرغ و قارچ.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۴۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="pasta"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="pasta"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- برگر -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فست فود"
-                    data-name="برگر خانگی"
-                >
-
-                    <div class="food-image brown">
-                        🍔
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            فست فود
-                        </span>
-
-                        <h3>
-                            برگر خانگی
-                        </h3>
-
-                        <p>
-                            یک برگر خوشمزه و آبدار برای یک وعده جذاب.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۳۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="burger"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="burger"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- فسنجان -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="فسنجان"
-                >
-
-                    <div class="food-image darkfood">
-                        🥘
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            فسنجان
-                        </h3>
-
-                        <p>
-                            خورشت خوشمزه ایرانی با گردو و رب انار.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۳ ساعت
-                            </span>
-
-                            <span>
-                                ⭐ سخت
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="fesenjan"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="fesenjan"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- کیک -->
-
-                <article
-                    class="recipe-card"
-                    data-category="دسر"
-                    data-name="کیک شکلاتی"
-                >
-
-                    <div class="food-image chocolate">
-                        🍰
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            دسر
-                        </span>
-
-                        <h3>
-                            کیک شکلاتی
-                        </h3>
-
-                        <p>
-                            کیک نرم و خوشمزه شکلاتی برای عاشقان شیرینی.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۶۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="cake"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="cake"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- قیمه -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="قیمه"
-                >
-
-                    <div class="food-image yellow">
-                        🍲
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            قیمه
-                        </h3>
-
-                        <p>
-                            خورشت محبوب ایرانی با لپه، گوشت و سیب‌زمینی.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ حدود ۲ ساعت و ۳۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="gheimeh"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="gheimeh"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- آش رشته -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="آش رشته"
-                >
-
-                    <div class="food-image green">
-                        🍜
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            آش رشته
-                        </h3>
-
-                        <p>
-                            آش سنتی ایرانی با سبزی، حبوبات، رشته و کشک.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ حدود ۲ ساعت
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="ash"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="ash"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- میرزا قاسمی -->
-
-                <article
-                    class="recipe-card"
-                    data-category="ایرانی"
-                    data-name="میرزا قاسمی"
-                >
-
-                    <div class="food-image brown">
-                        🍆
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            ایرانی
-                        </span>
-
-                        <h3>
-                            میرزا قاسمی
-                        </h3>
-
-                        <p>
-                            غذای شمالی خوش‌عطر با بادمجان و تخم‌مرغ.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۴۵ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="mirza"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="mirza"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- هات داگ -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فست فود"
-                    data-name="هات داگ"
-                >
-
-                    <div class="food-image orange">
-                        🌭
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            فست فود
-                        </span>
-
-                        <h3>
-                            هات داگ
-                        </h3>
-
-                        <p>
-                            هات داگ خوشمزه با پیاز، پنیر و سس مخصوص.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۲۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="hotdog"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="hotdog"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- سیب زمینی -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فست فود"
-                    data-name="سیب زمینی سرخ کرده"
-                >
-
-                    <div class="food-image yellow">
-                        🍟
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            فست فود
-                        </span>
-
-                        <h3>
-                            سیب‌زمینی سرخ‌کرده
-                        </h3>
-
-                        <p>
-                            سیب‌زمینی طلایی، ترد و خوشمزه.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۳۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="fries"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="fries"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- لازانیا -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فرنگی"
-                    data-name="لازانیا"
-                >
-
-                    <div class="food-image red">
-                        🧀
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            بین‌المللی
-                        </span>
-
-                        <h3>
-                            لازانیا
-                        </h3>
-
-                        <p>
-                            لایه‌های پاستا، گوشت، سس و پنیر کش‌دار.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۹۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="lasagna"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="lasagna"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- اسپاگتی -->
-
-                <article
-                    class="recipe-card"
-                    data-category="فرنگی"
-                    data-name="اسپاگتی بلونز"
-                >
-
-                    <div class="food-image cream">
-                        🍝
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            بین‌المللی
-                        </span>
-
-                        <h3>
-                            اسپاگتی بلونز
-                        </h3>
-
-                        <p>
-                            پاستای خوش‌طعم با گوشت و سس گوجه.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۵۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="spaghetti"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="spaghetti"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- تیرامیسو -->
-
-                <article
-                    class="recipe-card"
-                    data-category="دسر"
-                    data-name="تیرامیسو"
-                >
-
-                    <div class="food-image chocolate">
-                        🍰
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            دسر
-                        </span>
-
-                        <h3>
-                            تیرامیسو
-                        </h3>
-
-                        <p>
-                            دسر ایتالیایی با قهوه و کرم نرم.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۴۵ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="tiramisu"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="tiramisu"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- چیز کیک -->
-
-                <article
-                    class="recipe-card"
-                    data-category="دسر"
-                    data-name="چیز کیک"
-                >
-
-                    <div class="food-image cream">
-                        🍰
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            دسر
-                        </span>
-
-                        <h3>
-                            چیز کیک
-                        </h3>
-
-                        <p>
-                            دسر خامه‌ای با پایه بیسکویتی.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۷۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ متوسط
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="cheesecake"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="cheesecake"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- بستنی -->
-
-                <article
-                    class="recipe-card"
-                    data-category="دسر"
-                    data-name="بستنی وانیلی"
-                >
-
-                    <div class="food-image cream">
-                        🍨
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            دسر
-                        </span>
-
-                        <h3>
-                            بستنی وانیلی
-                        </h3>
-
-                        <p>
-                            دسر خنک و شیرین با طعم کلاسیک وانیل.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ زمان آماده‌سازی ۳۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="icecream"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="icecream"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- موس -->
-
-                <article
-                    class="recipe-card"
-                    data-category="دسر"
-                    data-name="موس شکلاتی"
-                >
-
-                    <div class="food-image chocolate">
-                        🍫
-                    </div>
-
-                    <div class="recipe-info">
-
-                        <span class="category">
-                            دسر
-                        </span>
-
-                        <h3>
-                            موس شکلاتی
-                        </h3>
-
-                        <p>
-                            دسر سبک و نرم برای عاشقان شکلات.
-                        </p>
-
-                        <div class="recipe-details">
-
-                            <span>
-                                ⏱️ ۴۰ دقیقه
-                            </span>
-
-                            <span>
-                                ⭐ آسان
-                            </span>
-
-                        </div>
-
-                        <div class="card-buttons">
-
-                            <button
-                                class="view-recipe"
-                                data-recipe="mousse"
-                                type="button"
-                            >
-                                مشاهده دستور پخت
-                            </button>
-
-                            <button
-                                class="favorite"
-                                data-recipe="mousse"
-                                type="button"
-                            >
-                                ❤️
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-
-            <!-- NO RESULTS -->
-
-            <div
-                id="noResults"
-                class="no-results"
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="نام غذای مورد نظرت را جستجو کن..."
             >
 
-                😔
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- شروع بخش اصلی سایت -->
+<!-- ========================= -->
+
+<main class="container">
+
+
+    <section class="intro">
+
+        <h2>
+            🍽️ غذاهای خوشمزه مامان آشپز
+        </h2>
+
+
+        <p>
+            روی هر غذا کلیک کن تا
+            دستور پخت آن را ببینی.
+        </p>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- کارت‌های غذا -->
+    <!-- ========================= -->
+
+    <section class="recipes-section">
+
+        <div class="recipes-grid">
+
+
+            <!-- ۱ -->
+
+            <div class="recipe-card" data-recipe="ghormehSabzi">
+
+                <div class="recipe-emoji">
+                    🍛
+                </div>
 
                 <h3>
-                    غذایی پیدا نشد
+                    قورمه سبزی
                 </h3>
 
                 <p>
-                    یک نام دیگر را جستجو کن.
+                    یکی از محبوب‌ترین غذاهای سنتی ایرانی
                 </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
 
             </div>
 
 
-        </div>
 
-    </section>
+            <!-- ۲ -->
+
+            <div class="recipe-card" data-recipe="gheimeh">
+
+                <div class="recipe-emoji">
+                    🥘
+                </div>
+
+                <h3>
+                    قیمه
+                </h3>
+
+                <p>
+                    خورشتی خوشمزه با لپه و گوشت
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
 
 
 
-    <!-- =========================
-         FEATURED
-    ========================== -->
+            <!-- ۳ -->
 
-    <section class="featured-section">
+            <div class="recipe-card" data-recipe="fesenjan">
 
-        <div class="container featured-container">
+                <div class="recipe-emoji">
+                    🥜
+                </div>
+
+                <h3>
+                    فسنجان
+                </h3>
+
+                <p>
+                    خورشت اصیل ایرانی با گردو و رب انار
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
 
 
-            <div class="featured-food">
 
-                ⭐
+            <!-- ۴ -->
 
-                <div>
+            <div class="recipe-card" data-recipe="zereshkPolo">
+
+                <div class="recipe-emoji">
                     🍗
                 </div>
 
+                <h3>
+                    زرشک پلو با مرغ
+                </h3>
+
+                <p>
+                    ترکیبی خوشمزه از مرغ، برنج و زرشک
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
             </div>
 
 
 
-            <div class="featured-content">
+            <!-- ۵ -->
 
-                <span>
-                    ⭐ غذای ویژه هفته
-                </span>
+            <div class="recipe-card" data-recipe="baghaliPolo">
 
-                <h2>
-                    زرشک پلو با مرغ
-                </h2>
+                <div class="recipe-emoji">
+                    🍚
+                </div>
+
+                <h3>
+                    باقالی پلو با گوشت
+                </h3>
 
                 <p>
-                    ترکیبی جذاب از مرغ خوش‌طعم،
-                    برنج زعفرانی و زرشک.
-                    یک انتخاب عالی برای مهمانی!
+                    برنج خوش‌عطر با شوید و باقالی
                 </p>
 
-                <button
-                    class="view-recipe"
-                    data-recipe="zereshk"
-                    type="button"
-                >
-                    🍳 مشاهده دستور پخت
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۶ -->
+
+            <div class="recipe-card" data-recipe="loobiaPolo">
+
+                <div class="recipe-emoji">
+                    🍅
+                </div>
+
+                <h3>
+                    لوبیا پلو
+                </h3>
+
+                <p>
+                    برنج مخلوط با لوبیا سبز و گوشت
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۷ -->
+
+            <div class="recipe-card" data-recipe="adasPolo">
+
+                <div class="recipe-emoji">
+                    🍚
+                </div>
+
+                <h3>
+                    عدس پلو
+                </h3>
+
+                <p>
+                    غذایی خوشمزه و مقوی با عدس
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۸ -->
+
+            <div class="recipe-card" data-recipe="estamboliPolo">
+
+                <div class="recipe-emoji">
+                    🍅
+                </div>
+
+                <h3>
+                    استانبولی پلو
+                </h3>
+
+                <p>
+                    برنج خوش‌رنگ با گوجه و سیب‌زمینی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۹ -->
+
+            <div class="recipe-card" data-recipe="kalamPolo">
+
+                <div class="recipe-emoji">
+                    🥬
+                </div>
+
+                <h3>
+                    کلم پلو شیرازی
+                </h3>
+
+                <p>
+                    غذای محلی خوش‌عطر شیراز
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۰ -->
+
+            <div class="recipe-card" data-recipe="sabziPoloMahi">
+
+                <div class="recipe-emoji">
+                    🐟
+                </div>
+
+                <h3>
+                    سبزی پلو با ماهی
+                </h3>
+
+                <p>
+                    غذای سنتی ایرانی با سبزی معطر
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۱ -->
+
+            <div class="recipe-card" data-recipe="gheimehBademjan">
+
+                <div class="recipe-emoji">
+                    🍆
+                </div>
+
+                <h3>
+                    قیمه بادمجان
+                </h3>
+
+                <p>
+                    خورشتی خوشمزه با بادمجان سرخ شده
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۲ -->
+
+            <div class="recipe-card" data-recipe="khoreshtKarafs">
+
+                <div class="recipe-emoji">
+                    🥬
+                </div>
+
+                <h3>
+                    خورشت کرفس
+                </h3>
+
+                <p>
+                    خورشتی خوش‌عطر با کرفس و سبزیجات
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۳ -->
+
+            <div class="recipe-card" data-recipe="khoreshtBamieh">
+
+                <div class="recipe-emoji">
+                    🥘
+                </div>
+
+                <h3>
+                    خورشت بامیه
+                </h3>
+
+                <p>
+                    خورشتی سنتی و خوشمزه ایرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۴ -->
+
+            <div class="recipe-card" data-recipe="alooEsfenaj">
+
+                <div class="recipe-emoji">
+                    🥬
+                </div>
+
+                <h3>
+                    خورشت آلو اسفناج
+                </h3>
+
+                <p>
+                    ترکیبی خوشمزه از آلو و اسفناج
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۵ -->
+
+            <div class="recipe-card" data-recipe="abgoosht">
+
+                <div class="recipe-emoji">
+                    🍲
+                </div>
+
+                <h3>
+                    آبگوشت
+                </h3>
+
+                <p>
+                    غذای سنتی و محبوب ایرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۶ -->
+
+            <div class="recipe-card" data-recipe="ashReshteh">
+
+                <div class="recipe-emoji">
+                    🍲
+                </div>
+
+                <h3>
+                    آش رشته
+                </h3>
+
+                <p>
+                    آش سنتی و بسیار محبوب ایرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۷ -->
+
+            <div class="recipe-card" data-recipe="ashDoogh">
+
+                <div class="recipe-emoji">
+                    🥣
+                </div>
+
+                <h3>
+                    آش دوغ
+                </h3>
+
+                <p>
+                    آشی خوشمزه و محلی با دوغ
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۸ -->
+
+            <div class="recipe-card" data-recipe="halim">
+
+                <div class="recipe-emoji">
+                    🥣
+                </div>
+
+                <h3>
+                    حلیم
+                </h3>
+
+                <p>
+                    غذایی مقوی و محبوب برای صبحانه
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۱۹ -->
+
+            <div class="recipe-card" data-recipe="adasi">
+
+                <div class="recipe-emoji">
+                    🥣
+                </div>
+
+                <h3>
+                    عدسی
+                </h3>
+
+                <p>
+                    صبحانه‌ای سالم و بسیار مقوی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۰ -->
+
+            <div class="recipe-card" data-recipe="mirzaGhasemi">
+
+                <div class="recipe-emoji">
+                    🍆
+                </div>
+
+                <h3>
+                    میرزا قاسمی
+                </h3>
+
+                <p>
+                    غذای اصیل شمالی با بادمجان
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۱ -->
+
+            <div class="recipe-card" data-recipe="kashkBademjan">
+
+                <div class="recipe-emoji">
+                    🍆
+                </div>
+
+                <h3>
+                    کشک بادمجان
+                </h3>
+
+                <p>
+                    غذایی محبوب و خوشمزه با کشک
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۲ -->
+
+            <div class="recipe-card" data-recipe="kookooSabzi">
+
+                <div class="recipe-emoji">
+                    🥬
+                </div>
+
+                <h3>
+                    کوکو سبزی
+                </h3>
+
+                <p>
+                    غذایی سبک و خوش‌عطر با سبزی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۳ -->
+
+            <div class="recipe-card" data-recipe="kookooSibzamini">
+
+                <div class="recipe-emoji">
+                    🥔
+                </div>
+
+                <h3>
+                    کوکو سیب‌زمینی
+                </h3>
+
+                <p>
+                    غذایی سریع و خوشمزه برای خانه
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۴ -->
+
+            <div class="recipe-card" data-recipe="dolmehBargMo">
+
+                <div class="recipe-emoji">
+                    🍃
+                </div>
+
+                <h3>
+                    دلمه برگ مو
+                </h3>
+
+                <p>
+                    دلمه‌ای خوشمزه و سنتی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۵ -->
+
+            <div class="recipe-card" data-recipe="dolmehFelfel">
+
+                <div class="recipe-emoji">
+                    🫑
+                </div>
+
+                <h3>
+                    دلمه فلفل
+                </h3>
+
+                <p>
+                    فلفل شکم‌پر خوشمزه و مجلسی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۶ -->
+
+            <div class="recipe-card" data-recipe="dolmehBademjan">
+
+                <div class="recipe-emoji">
+                    🍆
+                </div>
+
+                <h3>
+                    دلمه بادمجان
+                </h3>
+
+                <p>
+                    بادمجان شکم‌پر خوشمزه و سنتی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۷ -->
+
+            <div class="recipe-card" data-recipe="yatimcheh">
+
+                <div class="recipe-emoji">
+                    🍆
+                </div>
+
+                <h3>
+                    یتیمچه
+                </h3>
+
+                <p>
+                    غذایی ساده و خوشمزه با سبزیجات
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۸ -->
+
+            <div class="recipe-card" data-recipe="khorakLoobia">
+
+                <div class="recipe-emoji">
+                    🫘
+                </div>
+
+                <h3>
+                    خوراک لوبیا
+                </h3>
+
+                <p>
+                    غذایی ساده، سالم و مقوی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۲۹ -->
+
+            <div class="recipe-card" data-recipe="kababKoobideh">
+
+                <div class="recipe-emoji">
+                    🍢
+                </div>
+
+                <h3>
+                    کباب کوبیده
+                </h3>
+
+                <p>
+                    یکی از محبوب‌ترین کباب‌های ایرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۰ -->
+
+            <div class="recipe-card" data-recipe="jojehKabab">
+
+                <div class="recipe-emoji">
+                    🍗
+                </div>
+
+                <h3>
+                    جوجه کباب
+                </h3>
+
+                <p>
+                    مرغ کبابی خوش‌طعم با زعفران
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۱ -->
+
+            <div class="recipe-card" data-recipe="tahchinMorgh">
+
+                <div class="recipe-emoji">
+                    🍗
+                </div>
+
+                <h3>
+                    ته‌چین مرغ
+                </h3>
+
+                <p>
+                    برنج زعفرانی خوشمزه با مرغ و ماست
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۲ -->
+
+            <div class="recipe-card" data-recipe="akbarJojeh">
+
+                <div class="recipe-emoji">
+                    🍗
+                </div>
+
+                <h3>
+                    اکبر جوجه
+                </h3>
+
+                <p>
+                    مرغ سرخ‌شده خوشمزه به سبک شمال ایران
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۳ -->
+
+            <div class="recipe-card" data-recipe="kababBarg">
+
+                <div class="recipe-emoji">
+                    🥩
+                </div>
+
+                <h3>
+                    کباب برگ
+                </h3>
+
+                <p>
+                    کباب مجلسی و لذیذ ایرانی با گوشت
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۴ -->
+
+            <div class="recipe-card" data-recipe="kababTabeyi">
+
+                <div class="recipe-emoji">
+                    🍖
+                </div>
+
+                <h3>
+                    کباب تابه‌ای
+                </h3>
+
+                <p>
+                    کباب خوشمزه و سریع برای تهیه در خانه
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۵ -->
+
+            <div class="recipe-card" data-recipe="shamiKabab">
+
+                <div class="recipe-emoji">
+                    🥩
+                </div>
+
+                <h3>
+                    شامی کباب
+                </h3>
+
+                <p>
+                    غذایی خوشمزه و سنتی با گوشت و لپه
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۶ -->
+
+            <div class="recipe-card" data-recipe="kotlet">
+
+                <div class="recipe-emoji">
+                    🥩
+                </div>
+
+                <h3>
+                    کتلت
+                </h3>
+
+                <p>
+                    غذایی محبوب و خوشمزه با گوشت و سیب‌زمینی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۷ -->
+
+            <div class="recipe-card" data-recipe="albalooPolo">
+
+                <div class="recipe-emoji">
+                    🍒
+                </div>
+
+                <h3>
+                    آلبالو پلو
+                </h3>
+
+                <p>
+                    پلوی خوش‌رنگ و مجلسی با آلبالو
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۸ -->
+
+            <div class="recipe-card" data-recipe="shirinPolo">
+
+                <div class="recipe-emoji">
+                    🍚
+                </div>
+
+                <h3>
+                    شیرین پلو
+                </h3>
+
+                <p>
+                    پلوی مجلسی و خوش‌عطر ایرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۳۹ -->
+
+            <div class="recipe-card" data-recipe="tachinGosht">
+
+                <div class="recipe-emoji">
+                    🍚
+                </div>
+
+                <h3>
+                    ته‌چین گوشت
+                </h3>
+
+                <p>
+                    ته‌چین مجلسی با گوشت و برنج زعفرانی
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۴۰ -->
+
+           <div class="recipe-card" data-recipe="dampokhtak">
+
+                <div class="recipe-emoji">
+                    🍅
+                </div>
+
+                <h3>
+                    دمپختک
+                </h3>
+
+                <p>
+                    غذایی ساده، سنتی و خوشمزه با برنج
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
+                </button>
+
+            </div>
+
+
+
+            <!-- ۴۱ -->
+
+            <div class="recipe-card" data-recipe="reshtehPolo">
+
+                <div class="recipe-emoji">
+                    🍚
+                </div>
+
+                <h3>
+                    رشته پلو
+                </h3>
+
+                <p>
+                    غذای سنتی و خوش‌عطر ایرانی با رشته
+                </p>
+
+                <button type="button" class="recipe-button">
+                    مشاهده دستور پخت
                 </button>
 
             </div>
@@ -2145,460 +1111,66 @@
 
 
 
-    <!-- =========================
-         TIPS
-    ========================== -->
+    <!-- ========================= -->
+    <!-- پنجره دستور پخت -->
+    <!-- ========================= -->
 
-    <section
-        id="tips"
-        class="tips-section"
+    <div
+        class="modal"
+        id="recipeModal"
     >
 
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
-                    👨‍🍳 نکات آشپزی
-                </span>
-
-                <h2>
-                    آشپزی حرفه‌ای‌تر در خانه
-                </h2>
-
-            </div>
-
-
-
-            <div class="tips-grid">
-
-
-                <div class="tip-card">
-
-                    <div>
-                        🧂
-                    </div>
-
-                    <h3>
-                        ادویه را درست استفاده کن
-                    </h3>
-
-                    <p>
-                        مقدار کم ادویه را اضافه کن و در صورت نیاز بیشتر کن.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tip-card">
-
-                    <div>
-                        🔥
-                    </div>
-
-                    <h3>
-                        حرارت مناسب مهم است
-                    </h3>
-
-                    <p>
-                        حرارت زیاد همیشه به معنی غذای بهتر نیست!
-                    </p>
-
-                </div>
-
-
-
-                <div class="tip-card">
-
-                    <div>
-                        🥬
-                    </div>
-
-                    <h3>
-                        مواد تازه انتخاب کن
-                    </h3>
-
-                    <p>
-                        مواد اولیه تازه طعم غذا را چند برابر بهتر می‌کند.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tip-card">
-
-                    <div>
-                        ❤️
-                    </div>
-
-                    <h3>
-                        با حوصله آشپزی کن
-                    </h3>
-
-                    <p>
-                        مهم‌ترین ماده هر غذا، حوصله و عشق است!
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         RANDOM
-    ========================== -->
-
-    <section class="random-section">
-
-        <div class="container random-content">
-
-
-            <div>
-
-                <span>
-                    🎲 انتخاب اتفاقی
-                </span>
-
-                <h2>
-                    نمی‌دونی امروز چی بپزی؟
-                </h2>
-
-                <p>
-                    اجازه بده طعم خونه یک غذای خوشمزه برایت انتخاب کند!
-                </p>
-
-            </div>
+        <div class="modal-content">
 
 
             <button
-                id="randomFoodButtonTwo"
-                class="primary-button"
                 type="button"
+                class="close-button"
+                id="closeModal"
             >
-                🎲 انتخاب غذا
+                ×
             </button>
 
 
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         STATS
-    ========================== -->
-
-    <section class="stats-section">
-
-        <div class="container">
-
-            <div class="stats-grid">
-
-
-                <div>
-
-                    <strong>
-                        ۲۰+
-                    </strong>
-
-                    <span>
-                        دستور غذا
-                    </span>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        ۵
-                    </strong>
-
-                    <span>
-                        دسته‌بندی
-                    </span>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        ۱۰۰٪
-                    </strong>
-
-                    <span>
-                        عشق به آشپزی
-                    </span>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        ۲۴/۷
-                    </strong>
-
-                    <span>
-                        در دسترس
-                    </span>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section
-        id="about"
-        class="about-section"
-    >
-
-        <div class="container about-container">
-
-
-            <div class="about-emoji">
-                ❤️
-            </div>
-
-
-
-            <div class="about-text">
-
-                <span>
-                    درباره طعم خونه
-                </span>
-
-                <h2>
-                    جایی برای عشق به آشپزی
-                </h2>
-
-                <p>
-                    طعم خونه جایی برای جمع کردن
-                    دستور غذاهای خوشمزه و ساده است.
-                </p>
-
-                <p>
-                    اینجا می‌توانی غذای جدید پیدا کنی،
-                    دستور پخت کامل ببینی و غذاهای مورد علاقه‌ات
-                    را ذخیره کنی.
-                </p>
-
-                <p>
-                    فقط غذا، آشپزی و عشق ❤️
-                </p>
+            <div
+                id="modalRecipeContent"
+            >
 
             </div>
 
 
         </div>
 
-    </section>
-
-
-
-    <!-- =========================
-         NEWSLETTER
-    ========================== -->
-
-    <section class="newsletter-section">
-
-        <div class="container newsletter-container">
-
-
-            <div>
-
-                <span>
-                    📩 خبرنامه
-                </span>
-
-                <h2>
-                    از طعم‌های جدید باخبر شو
-                </h2>
-
-                <p>
-                    به زودی دستورهای جدید
-                    و جذاب بیشتری اضافه می‌کنیم!
-                </p>
-
-            </div>
-
-
-
-            <div class="newsletter-form">
-
-                <input
-                    type="email"
-                    id="newsletterEmail"
-                    placeholder="ایمیل شما..."
-                >
-
-                <button
-                    id="newsletterButton"
-                    type="button"
-                >
-                    عضویت
-                </button>
-
-            </div>
-
-
-        </div>
-
-    </section>
+    </div>
 
 
 </main>
 
 
 
-<!-- =========================
-     FOOTER
-========================== -->
+<!-- ========================= -->
+<!-- فوتر سایت -->
+<!-- ========================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="container footer-content">
+    <h3>
+        مامان آشپز 👩‍🍳
+    </h3>
 
-
-        <div class="footer-logo">
-            🍳 طعم خونه
-        </div>
-
-
-        <p>
-            دستور غذاهای خوشمزه،
-            ساده و دوست‌داشتنی ❤️
-        </p>
-
-
-        <div class="footer-links">
-
-            <a href="#home">خانه</a>
-            <a href="#recipes">غذاها</a>
-            <a href="#categories">دسته‌بندی</a>
-            <a href="#tips">نکات آشپزی</a>
-            <a href="#about">درباره ما</a>
-
-        </div>
-
-
-        <small>
-            © ۲۰۲۶ طعم خونه | ساخته شده با ❤️
-        </small>
-
-
-    </div>
+    <p>
+        با عشق آشپزی کن ❤️
+    </p>
 
 </footer>
 
 
 
-<!-- =========================
-     RECIPE MODAL
-========================== -->
+<!-- ========================= -->
+<!-- اتصال JavaScript -->
+<!-- ========================= -->
 
-<div
-    id="recipeModal"
-    class="modal"
->
-
-    <div class="modal-overlay"></div>
-
-
-    <div class="modal-box">
-
-        <button
-            id="closeModal"
-            class="close-button"
-            type="button"
-        >
-            ×
-        </button>
-
-
-        <div id="modalContent"></div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =========================
-     FAVORITES MODAL
-========================== -->
-
-<div
-    id="favoritesModal"
-    class="modal"
->
-
-    <div class="modal-overlay"></div>
-
-
-    <div class="modal-box">
-
-        <button
-            id="closeFavorites"
-            class="close-button"
-            type="button"
-        >
-            ×
-        </button>
-
-
-        <h2 class="modal-title">
-            ❤️ علاقه‌مندی‌های من
-        </h2>
-
-
-        <div id="favoritesList"></div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =========================
-     TOAST
-========================== -->
-
-<div
-    id="toast"
-    class="toast"
-></div>
-
-
-
-<!-- =========================
-     JAVASCRIPT
-========================== -->
-
-<script src="./script.js"></script>
+<script src="script.js"></script>
 ```
 
 </body>
