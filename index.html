@@ -1,1178 +1,3107 @@
 <!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="طعم خونه؛ ۲۰۴ دستور غذا، دسر و نوشیدنی">
+  <title>طعم خونه | دستور غذاهای خوشمزه</title>
 
-```
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>مامان آشپز</title>
-
-<link
-    rel="stylesheet"
-    href="style.css"
->
-```
-
+  <!-- اتصال مستقیم HTML به CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-```
-<!-- ========================= -->
-<!-- قسمت ۱: هدر سایت -->
-<!-- ========================= -->
-
-<header class="header">
-
-    <div class="logo">
-
-        <span class="logo-icon">
-            👩‍🍳
-        </span>
-
-        <h1>
-            مامان آشپز
-        </h1>
-
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="site-logo">🍳 طعم خونه</a>
+      <input id="searchInput" type="search" placeholder="نام غذای موردنظر را جستجو کن..." autocomplete="off">
     </div>
+  </header>
 
-
-    <p class="subtitle">
-
-        خوشمزه‌ترین غذاهای ایرانی،
-        با عشق برای شما ❤️
-
-    </p>
-
-</header>
-
-
-
-<!-- ========================= -->
-<!-- قسمت ۲: بخش جستجو -->
-<!-- ========================= -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h2>
-            امروز چی بپزم؟ 🍲
-        </h2>
-
-
-        <p>
-            غذای مورد نظرت را جستجو کن
-            و دستور پخت آن را ببین.
-        </p>
-
-
-        <div class="search-box">
-
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="نام غذای مورد نظرت را جستجو کن..."
-            >
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- شروع بخش اصلی سایت -->
-<!-- ========================= -->
-
-<main class="container">
-
-
-    <section class="intro">
-
-        <h2>
-            🍽️ غذاهای خوشمزه مامان آشپز
-        </h2>
-
-
-        <p>
-            روی هر غذا کلیک کن تا
-            دستور پخت آن را ببینی.
-        </p>
-
+  <main>
+    <section class="hero-section">
+      <h1>🍳 به طعم خونه خوش آمدید</h1>
+      <p>۲۰۴ دستور غذا، غذای ایرانی، غذای خارجی، دسر و نوشیدنی</p>
     </section>
-
-
-
-    <!-- ========================= -->
-    <!-- کارت‌های غذا -->
-    <!-- ========================= -->
 
     <section class="recipes-section">
-
-        <div class="recipes-grid">
-
-
-            <!-- ۱ -->
-
-            <div class="recipe-card" data-recipe="ghormehSabzi">
-
-                <div class="recipe-emoji">
-                    🍛
-                </div>
-
-                <h3>
-                    قورمه سبزی
-                </h3>
-
-                <p>
-                    یکی از محبوب‌ترین غذاهای سنتی ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+      <h2>دستورهای غذایی</h2>
+      <div class="recipes-grid">
+        <article class="recipe-card" data-name="قورمه سبزی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>قورمه سبزی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه قورمه سبزی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲ -->
-
-            <div class="recipe-card" data-recipe="gheimeh">
-
-                <div class="recipe-emoji">
-                    🥘
-                </div>
-
-                <h3>
-                    قیمه
-                </h3>
-
-                <p>
-                    خورشتی خوشمزه با لپه و گوشت
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe1">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="زرشک پلو با مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>زرشک پلو با مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه زرشک پلو با مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳ -->
-
-            <div class="recipe-card" data-recipe="fesenjan">
-
-                <div class="recipe-emoji">
-                    🥜
-                </div>
-
-                <h3>
-                    فسنجان
-                </h3>
-
-                <p>
-                    خورشت اصیل ایرانی با گردو و رب انار
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe2">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چلو کباب کوبیده">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چلو کباب کوبیده</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چلو کباب کوبیده در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۴ -->
-
-            <div class="recipe-card" data-recipe="zereshkPolo">
-
-                <div class="recipe-emoji">
-                    🍗
-                </div>
-
-                <h3>
-                    زرشک پلو با مرغ
-                </h3>
-
-                <p>
-                    ترکیبی خوشمزه از مرغ، برنج و زرشک
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe3">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="قیمه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>قیمه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه قیمه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۵ -->
-
-            <div class="recipe-card" data-recipe="baghaliPolo">
-
-                <div class="recipe-emoji">
-                    🍚
-                </div>
-
-                <h3>
-                    باقالی پلو با گوشت
-                </h3>
-
-                <p>
-                    برنج خوش‌عطر با شوید و باقالی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe4">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فسنجان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فسنجان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فسنجان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۶ -->
-
-            <div class="recipe-card" data-recipe="loobiaPolo">
-
-                <div class="recipe-emoji">
-                    🍅
-                </div>
-
-                <h3>
-                    لوبیا پلو
-                </h3>
-
-                <p>
-                    برنج مخلوط با لوبیا سبز و گوشت
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe5">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آبگوشت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آبگوشت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آبگوشت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۷ -->
-
-            <div class="recipe-card" data-recipe="adasPolo">
-
-                <div class="recipe-emoji">
-                    🍚
-                </div>
-
-                <h3>
-                    عدس پلو
-                </h3>
-
-                <p>
-                    غذایی خوشمزه و مقوی با عدس
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe6">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب تابه‌ای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب تابه‌ای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب تابه‌ای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۸ -->
-
-            <div class="recipe-card" data-recipe="estamboliPolo">
-
-                <div class="recipe-emoji">
-                    🍅
-                </div>
-
-                <h3>
-                    استانبولی پلو
-                </h3>
-
-                <p>
-                    برنج خوش‌رنگ با گوجه و سیب‌زمینی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe7">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="جوجه کباب">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>جوجه کباب</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه جوجه کباب در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۹ -->
-
-            <div class="recipe-card" data-recipe="kalamPolo">
-
-                <div class="recipe-emoji">
-                    🥬
-                </div>
-
-                <h3>
-                    کلم پلو شیرازی
-                </h3>
-
-                <p>
-                    غذای محلی خوش‌عطر شیراز
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe8">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="میرزا قاسمی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>میرزا قاسمی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه میرزا قاسمی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۰ -->
-
-            <div class="recipe-card" data-recipe="sabziPoloMahi">
-
-                <div class="recipe-emoji">
-                    🐟
-                </div>
-
-                <h3>
-                    سبزی پلو با ماهی
-                </h3>
-
-                <p>
-                    غذای سنتی ایرانی با سبزی معطر
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe9">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کشک بادمجان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کشک بادمجان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کشک بادمجان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۱ -->
-
-            <div class="recipe-card" data-recipe="gheimehBademjan">
-
-                <div class="recipe-emoji">
-                    🍆
-                </div>
-
-                <h3>
-                    قیمه بادمجان
-                </h3>
-
-                <p>
-                    خورشتی خوشمزه با بادمجان سرخ شده
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe10">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="عدس پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>عدس پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه عدس پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۲ -->
-
-            <div class="recipe-card" data-recipe="khoreshtKarafs">
-
-                <div class="recipe-emoji">
-                    🥬
-                </div>
-
-                <h3>
-                    خورشت کرفس
-                </h3>
-
-                <p>
-                    خورشتی خوش‌عطر با کرفس و سبزیجات
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe11">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="لوبیا پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>لوبیا پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه لوبیا پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۳ -->
-
-            <div class="recipe-card" data-recipe="khoreshtBamieh">
-
-                <div class="recipe-emoji">
-                    🥘
-                </div>
-
-                <h3>
-                    خورشت بامیه
-                </h3>
-
-                <p>
-                    خورشتی سنتی و خوشمزه ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe12">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="باقالی پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>باقالی پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه باقالی پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۴ -->
-
-            <div class="recipe-card" data-recipe="alooEsfenaj">
-
-                <div class="recipe-emoji">
-                    🥬
-                </div>
-
-                <h3>
-                    خورشت آلو اسفناج
-                </h3>
-
-                <p>
-                    ترکیبی خوشمزه از آلو و اسفناج
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe13">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آلبالو پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آلبالو پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آلبالو پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۵ -->
-
-            <div class="recipe-card" data-recipe="abgoosht">
-
-                <div class="recipe-emoji">
-                    🍲
-                </div>
-
-                <h3>
-                    آبگوشت
-                </h3>
-
-                <p>
-                    غذای سنتی و محبوب ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe14">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سبزی پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سبزی پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سبزی پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۶ -->
-
-            <div class="recipe-card" data-recipe="ashReshteh">
-
-                <div class="recipe-emoji">
-                    🍲
-                </div>
-
-                <h3>
-                    آش رشته
-                </h3>
-
-                <p>
-                    آش سنتی و بسیار محبوب ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe15">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کلم پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کلم پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کلم پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۷ -->
-
-            <div class="recipe-card" data-recipe="ashDoogh">
-
-                <div class="recipe-emoji">
-                    🥣
-                </div>
-
-                <h3>
-                    آش دوغ
-                </h3>
-
-                <p>
-                    آشی خوشمزه و محلی با دوغ
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe16">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوفته تبریزی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوفته تبریزی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوفته تبریزی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۸ -->
-
-            <div class="recipe-card" data-recipe="halim">
-
-                <div class="recipe-emoji">
-                    🥣
-                </div>
-
-                <h3>
-                    حلیم
-                </h3>
-
-                <p>
-                    غذایی مقوی و محبوب برای صبحانه
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe17">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ته چین مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ته چین مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ته چین مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۱۹ -->
-
-            <div class="recipe-card" data-recipe="adasi">
-
-                <div class="recipe-emoji">
-                    🥣
-                </div>
-
-                <h3>
-                    عدسی
-                </h3>
-
-                <p>
-                    صبحانه‌ای سالم و بسیار مقوی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe18">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش رشته">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش رشته</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش رشته در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۰ -->
-
-            <div class="recipe-card" data-recipe="mirzaGhasemi">
-
-                <div class="recipe-emoji">
-                    🍆
-                </div>
-
-                <h3>
-                    میرزا قاسمی
-                </h3>
-
-                <p>
-                    غذای اصیل شمالی با بادمجان
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe19">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش جو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش جو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش جو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۱ -->
-
-            <div class="recipe-card" data-recipe="kashkBademjan">
-
-                <div class="recipe-emoji">
-                    🍆
-                </div>
-
-                <h3>
-                    کشک بادمجان
-                </h3>
-
-                <p>
-                    غذایی محبوب و خوشمزه با کشک
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe20">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ جو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ جو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ جو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۲ -->
-
-            <div class="recipe-card" data-recipe="kookooSabzi">
-
-                <div class="recipe-emoji">
-                    🥬
-                </div>
-
-                <h3>
-                    کوکو سبزی
-                </h3>
-
-                <p>
-                    غذایی سبک و خوش‌عطر با سبزی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe21">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ شیر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ شیر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ شیر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۳ -->
-
-            <div class="recipe-card" data-recipe="kookooSibzamini">
-
-                <div class="recipe-emoji">
-                    🥔
-                </div>
-
-                <h3>
-                    کوکو سیب‌زمینی
-                </h3>
-
-                <p>
-                    غذایی سریع و خوشمزه برای خانه
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe22">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="باقالی قاتق">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>باقالی قاتق</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه باقالی قاتق در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۴ -->
-
-            <div class="recipe-card" data-recipe="dolmehBargMo">
-
-                <div class="recipe-emoji">
-                    🍃
-                </div>
-
-                <h3>
-                    دلمه برگ مو
-                </h3>
-
-                <p>
-                    دلمه‌ای خوشمزه و سنتی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe23">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ترش تره">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ترش تره</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ترش تره در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۵ -->
-
-            <div class="recipe-card" data-recipe="dolmehFelfel">
-
-                <div class="recipe-emoji">
-                    🫑
-                </div>
-
-                <h3>
-                    دلمه فلفل
-                </h3>
-
-                <p>
-                    فلفل شکم‌پر خوشمزه و مجلسی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe24">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خورش بادمجان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خورش بادمجان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خورش بادمجان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۶ -->
-
-            <div class="recipe-card" data-recipe="dolmehBademjan">
-
-                <div class="recipe-emoji">
-                    🍆
-                </div>
-
-                <h3>
-                    دلمه بادمجان
-                </h3>
-
-                <p>
-                    بادمجان شکم‌پر خوشمزه و سنتی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe25">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خورش کرفس">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خورش کرفس</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خورش کرفس در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۷ -->
-
-            <div class="recipe-card" data-recipe="yatimcheh">
-
-                <div class="recipe-emoji">
-                    🍆
-                </div>
-
-                <h3>
-                    یتیمچه
-                </h3>
-
-                <p>
-                    غذایی ساده و خوشمزه با سبزیجات
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe26">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خورش آلو اسفناج">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خورش آلو اسفناج</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خورش آلو اسفناج در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۸ -->
-
-            <div class="recipe-card" data-recipe="khorakLoobia">
-
-                <div class="recipe-emoji">
-                    🫘
-                </div>
-
-                <h3>
-                    خوراک لوبیا
-                </h3>
-
-                <p>
-                    غذایی ساده، سالم و مقوی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe27">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اکبر جوجه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اکبر جوجه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اکبر جوجه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۲۹ -->
-
-            <div class="recipe-card" data-recipe="kababKoobideh">
-
-                <div class="recipe-emoji">
-                    🍢
-                </div>
-
-                <h3>
-                    کباب کوبیده
-                </h3>
-
-                <p>
-                    یکی از محبوب‌ترین کباب‌های ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe28">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چلو گوشت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چلو گوشت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چلو گوشت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۰ -->
-
-            <div class="recipe-card" data-recipe="jojehKabab">
-
-                <div class="recipe-emoji">
-                    🍗
-                </div>
-
-                <h3>
-                    جوجه کباب
-                </h3>
-
-                <p>
-                    مرغ کبابی خوش‌طعم با زعفران
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe29">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب برگ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب برگ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب برگ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۱ -->
-
-            <div class="recipe-card" data-recipe="tahchinMorgh">
-
-                <div class="recipe-emoji">
-                    🍗
-                </div>
-
-                <h3>
-                    ته‌چین مرغ
-                </h3>
-
-                <p>
-                    برنج زعفرانی خوشمزه با مرغ و ماست
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe30">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب سلطانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب سلطانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب سلطانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۲ -->
-
-            <div class="recipe-card" data-recipe="akbarJojeh">
-
-                <div class="recipe-emoji">
-                    🍗
-                </div>
-
-                <h3>
-                    اکبر جوجه
-                </h3>
-
-                <p>
-                    مرغ سرخ‌شده خوشمزه به سبک شمال ایران
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe31">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب بختیاری">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب بختیاری</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب بختیاری در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۳ -->
-
-            <div class="recipe-card" data-recipe="kababBarg">
-
-                <div class="recipe-emoji">
-                    🥩
-                </div>
-
-                <h3>
-                    کباب برگ
-                </h3>
-
-                <p>
-                    کباب مجلسی و لذیذ ایرانی با گوشت
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe32">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب ترش">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب ترش</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب ترش در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۴ -->
-
-            <div class="recipe-card" data-recipe="kababTabeyi">
-
-                <div class="recipe-emoji">
-                    🍖
-                </div>
-
-                <h3>
-                    کباب تابه‌ای
-                </h3>
-
-                <p>
-                    کباب خوشمزه و سریع برای تهیه در خانه
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe33">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دیزی سنگی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دیزی سنگی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دیزی سنگی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۵ -->
-
-            <div class="recipe-card" data-recipe="shamiKabab">
-
-                <div class="recipe-emoji">
-                    🥩
-                </div>
-
-                <h3>
-                    شامی کباب
-                </h3>
-
-                <p>
-                    غذایی خوشمزه و سنتی با گوشت و لپه
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe34">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آبگوشت بزباش">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آبگوشت بزباش</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آبگوشت بزباش در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۶ -->
-
-            <div class="recipe-card" data-recipe="kotlet">
-
-                <div class="recipe-emoji">
-                    🥩
-                </div>
-
-                <h3>
-                    کتلت
-                </h3>
-
-                <p>
-                    غذایی محبوب و خوشمزه با گوشت و سیب‌زمینی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe35">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اشکنه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اشکنه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اشکنه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۷ -->
-
-            <div class="recipe-card" data-recipe="albalooPolo">
-
-                <div class="recipe-emoji">
-                    🍒
-                </div>
-
-                <h3>
-                    آلبالو پلو
-                </h3>
-
-                <p>
-                    پلوی خوش‌رنگ و مجلسی با آلبالو
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe36">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کله جوش">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کله جوش</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کله جوش در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۸ -->
-
-            <div class="recipe-card" data-recipe="shirinPolo">
-
-                <div class="recipe-emoji">
-                    🍚
-                </div>
-
-                <h3>
-                    شیرین پلو
-                </h3>
-
-                <p>
-                    پلوی مجلسی و خوش‌عطر ایرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe37">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="یتیمچه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>یتیمچه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه یتیمچه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۳۹ -->
-
-            <div class="recipe-card" data-recipe="tachinGosht">
-
-                <div class="recipe-emoji">
-                    🍚
-                </div>
-
-                <h3>
-                    ته‌چین گوشت
-                </h3>
-
-                <p>
-                    ته‌چین مجلسی با گوشت و برنج زعفرانی
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe38">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دلمه برگ مو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دلمه برگ مو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دلمه برگ مو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۴۰ -->
-
-           <div class="recipe-card" data-recipe="dampokhtak">
-
-                <div class="recipe-emoji">
-                    🍅
-                </div>
-
-                <h3>
-                    دمپختک
-                </h3>
-
-                <p>
-                    غذایی ساده، سنتی و خوشمزه با برنج
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe39">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دلمه فلفل">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دلمه فلفل</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دلمه فلفل در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-
-            <!-- ۴۱ -->
-
-            <div class="recipe-card" data-recipe="reshtehPolo">
-
-                <div class="recipe-emoji">
-                    🍚
-                </div>
-
-                <h3>
-                    رشته پلو
-                </h3>
-
-                <p>
-                    غذای سنتی و خوش‌عطر ایرانی با رشته
-                </p>
-
-                <button type="button" class="recipe-button">
-                    مشاهده دستور پخت
-                </button>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe40">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دلمه بادمجان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دلمه بادمجان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دلمه بادمجان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
             </div>
-
-
-        </div>
-
+            <button type="button" class="view-recipe-btn" data-recipe="recipe41">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوفته ریزه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوفته ریزه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوفته ریزه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe42">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوفته لپه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوفته لپه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوفته لپه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe43">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="عدسی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>عدسی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه عدسی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe44">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="حلیم">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>حلیم</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه حلیم در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe45">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شله مشهدی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شله مشهدی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شله مشهدی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe46">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش دوغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش دوغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش دوغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe47">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش شله قلمکار">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش شله قلمکار</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش شله قلمکار در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe48">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش انار">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش انار</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش انار در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe49">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش کشک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش کشک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش کشک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe50">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دمپختک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دمپختک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دمپختک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe51">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="استانبولی پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>استانبولی پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه استانبولی پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe52">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="رشته پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>رشته پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه رشته پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe53">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شیرین پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شیرین پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شیرین پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe54">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مرصع پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مرصع پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مرصع پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe55">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مجلسی پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مجلسی پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مجلسی پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe56">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="قنبر پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>قنبر پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه قنبر پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe57">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="هواری میگو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>هواری میگو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه هواری میگو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe58">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="میگو پلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>میگو پلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه میگو پلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe59">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سبزی پلو با ماهی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سبزی پلو با ماهی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سبزی پلو با ماهی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe60">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ماهی شکم پر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ماهی شکم پر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ماهی شکم پر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe61">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ماهی سرخ شده">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ماهی سرخ شده</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ماهی سرخ شده در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe62">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ماهیچه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ماهیچه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ماهیچه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe63">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="گردن گوسفندی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>گردن گوسفندی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه گردن گوسفندی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe64">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک زبان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک زبان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک زبان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe65">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دل و جگر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دل و جگر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دل و جگر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe66">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="جگرکی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>جگرکی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه جگرکی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe67">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوسیس تخم مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوسیس تخم مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوسیس تخم مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe68">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="املت گوجه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>املت گوجه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه املت گوجه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe69">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="املت قارچ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>املت قارچ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه املت قارچ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe70">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="نرگسی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>نرگسی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه نرگسی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe71">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوکو سبزی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوکو سبزی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوکو سبزی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe72">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوکو سیب زمینی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوکو سیب زمینی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوکو سیب زمینی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe73">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوکو مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوکو مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوکو مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe74">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شامی کباب">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شامی کباب</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شامی کباب در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe75">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کتلت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کتلت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کتلت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe76">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سمبوسه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سمبوسه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سمبوسه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe77">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فلافل">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فلافل</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فلافل در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe78">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پیراشکی گوشت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پیراشکی گوشت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پیراشکی گوشت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe79">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="رول مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>رول مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه رول مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe80">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe81">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مرغ ترش">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مرغ ترش</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مرغ ترش در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe82">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مرغ شکم پر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مرغ شکم پر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مرغ شکم پر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe83">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مرغ زعفرانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مرغ زعفرانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مرغ زعفرانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe84">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چیکن استراگانف ایرانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چیکن استراگانف ایرانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چیکن استراگانف ایرانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe85">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ قارچ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ قارچ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ قارچ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe86">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ سبزیجات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ سبزیجات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ سبزیجات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe87">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ رشته">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ رشته</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ رشته در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe88">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش گندم">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش گندم</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش گندم در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe89">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="آش بلغور">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>آش بلغور</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه آش بلغور در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe90">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک لوبیا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک لوبیا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک لوبیا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe91">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک عدس">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک عدس</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک عدس در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe92">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک بادمجان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک بادمجان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک بادمجان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe93">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک قارچ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک قارچ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک قارچ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe94">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک سبزیجات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک سبزیجات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک سبزیجات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe95">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک کدو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک کدو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک کدو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe96">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ترشی بندری">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ترشی بندری</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ترشی بندری در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe97">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سالاد شیرازی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍛</div>
+            <span class="recipe-category">غذای ایرانی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سالاد شیرازی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سالاد شیرازی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe98">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پیتزا مارگاریتا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پیتزا مارگاریتا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پیتزا مارگاریتا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe99">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پیتزا پپرونی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پیتزا پپرونی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پیتزا پپرونی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe100">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="لازانیا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>لازانیا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه لازانیا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe101">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پاستا آلفردو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پاستا آلفردو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پاستا آلفردو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe102">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اسپاگتی بلونز">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اسپاگتی بلونز</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اسپاگتی بلونز در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe103">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="نودل">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>نودل</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه نودل در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe104">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="رامن">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>رامن</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه رامن در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe105">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوشی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوشی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوشی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe106">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="استیک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>استیک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه استیک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe107">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شنیتسل مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شنیتسل مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شنیتسل مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe108">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="برگر کلاسیک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>برگر کلاسیک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه برگر کلاسیک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe109">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="هات داگ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>هات داگ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه هات داگ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe110">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="تاکو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>تاکو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه تاکو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe111">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بوریتو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بوریتو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بوریتو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe112">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کاری مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کاری مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کاری مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe113">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="باتر چیکن">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>باتر چیکن</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه باتر چیکن در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe114">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پد تای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پد تای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پد تای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe115">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چاو مین">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چاو مین</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چاو مین در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe116">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فیش اند چیپس">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فیش اند چیپس</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فیش اند چیپس در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe117">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چیکن برگر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چیکن برگر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چیکن برگر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe118">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پاستا پستو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پاستا پستو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پاستا پستو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe119">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پاستا دریایی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پاستا دریایی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پاستا دریایی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe120">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پیتزا سبزیجات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پیتزا سبزیجات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پیتزا سبزیجات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe121">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مک اند چیز">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مک اند چیز</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مک اند چیز در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe122">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ریسوتو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ریسوتو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ریسوتو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe123">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="گنوچی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>گنوچی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه گنوچی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe124">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="راویولی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>راویولی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه راویولی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe125">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوپ پیاز فرانسوی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوپ پیاز فرانسوی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوپ پیاز فرانسوی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe126">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سالاد سزار">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سالاد سزار</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سالاد سزار در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe127">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سالاد یونانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سالاد یونانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سالاد یونانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe128">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سالاد کلم">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سالاد کلم</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سالاد کلم در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe129">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کلاب ساندویچ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کلاب ساندویچ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کلاب ساندویچ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe130">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ساندویچ استیک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ساندویچ استیک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ساندویچ استیک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe131">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پنینی مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پنینی مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پنینی مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe132">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوردن بلو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوردن بلو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوردن بلو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe133">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مرغ کنتاکی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مرغ کنتاکی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مرغ کنتاکی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe134">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بال مرغ باربیکیو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بال مرغ باربیکیو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بال مرغ باربیکیو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe135">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بیف استروگانف">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بیف استروگانف</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بیف استروگانف در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe136">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="خوراک گوشت مکزیکی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>خوراک گوشت مکزیکی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه خوراک گوشت مکزیکی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe137">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پائیا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پائیا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پائیا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe138">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فاهیتا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فاهیتا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فاهیتا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe139">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ناچو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ناچو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ناچو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe140">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شاورما">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شاورما</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شاورما در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe141">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="حمص">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>حمص</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه حمص در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe142">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فلافل لبنانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فلافل لبنانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فلافل لبنانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe143">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کباب ترکی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کباب ترکی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کباب ترکی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe144">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دونر کباب">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دونر کباب</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دونر کباب در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe145">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="موساکا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>موساکا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه موساکا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe146">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوولاکی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوولاکی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوولاکی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe147">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="راتاتویی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>راتاتویی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه راتاتویی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe148">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیش لورن">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیش لورن</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیش لورن در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe149">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کروک مسیو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کروک مسیو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کروک مسیو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe150">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="وافل مرغ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>وافل مرغ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه وافل مرغ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe151">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="صبحانه انگلیسی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>صبحانه انگلیسی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه صبحانه انگلیسی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe152">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="املت اسپانیایی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>املت اسپانیایی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه املت اسپانیایی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe153">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پای گوشت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پای گوشت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پای گوشت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe154">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چیکن پای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چیکن پای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چیکن پای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe155">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چاپ سوئی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چاپ سوئی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چاپ سوئی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe156">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دامپلینگ">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دامپلینگ</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دامپلینگ در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe157">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اسپرینگ رول">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اسپرینگ رول</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اسپرینگ رول در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe158">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کاری سبزیجات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍽️</div>
+            <span class="recipe-category">غذای خارجی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کاری سبزیجات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کاری سبزیجات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe159">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe160">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک وانیلی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک وانیلی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک وانیلی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe161">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک هویج گردو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک هویج گردو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک هویج گردو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe162">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="براونی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>براونی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه براونی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe163">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="چیزکیک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>چیزکیک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه چیزکیک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe164">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوکی شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوکی شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوکی شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe165">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="دونات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>دونات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه دونات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe166">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="تیرامیسو">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>تیرامیسو</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه تیرامیسو در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe167">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پاناکوتا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پاناکوتا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پاناکوتا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe168">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="موس شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>موس شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه موس شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe169">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فرنی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فرنی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فرنی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe170">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شله زرد">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شله زرد</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شله زرد در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe171">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="باقلوا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>باقلوا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه باقلوا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe172">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="قطاب">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>قطاب</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه قطاب در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe173">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="فالوده شیرازی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>فالوده شیرازی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه فالوده شیرازی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe174">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بستنی زعفرانی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بستنی زعفرانی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بستنی زعفرانی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe175">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کرم کارامل">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کرم کارامل</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کرم کارامل در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe176">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="ژله میوه‌ای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>ژله میوه‌ای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه ژله میوه‌ای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe177">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک اسفنجی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک اسفنجی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک اسفنجی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe178">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک خیس">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک خیس</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک خیس در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe179">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کیک ردولوت">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کیک ردولوت</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کیک ردولوت در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe180">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کاپ کیک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کاپ کیک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کاپ کیک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe181">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مافین بلوبری">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مافین بلوبری</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مافین بلوبری در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe182">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="تارت میوه">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>تارت میوه</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه تارت میوه در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe183">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پای سیب">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پای سیب</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پای سیب در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe184">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="پودینگ شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>پودینگ شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه پودینگ شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe185">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوفله شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوفله شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوفله شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe186">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اکلر">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اکلر</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اکلر در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe187">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="رولت خامه‌ای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>رولت خامه‌ای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه رولت خامه‌ای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe188">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="نان خامه‌ای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>نان خامه‌ای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه نان خامه‌ای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe189">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بیسکوئیت خانگی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بیسکوئیت خانگی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بیسکوئیت خانگی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe190">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کوکی کره‌ای">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کوکی کره‌ای</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کوکی کره‌ای در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe191">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="کلوچه فومن">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>کلوچه فومن</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه کلوچه فومن در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe192">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="نان برنجی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>نان برنجی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه نان برنجی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe193">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="سوهان">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>سوهان</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه سوهان در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe194">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="گز">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>گز</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه گز در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe195">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="مسقطی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>مسقطی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه مسقطی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe196">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="رنگینک">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>رنگینک</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه رنگینک در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe197">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="حلوا">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>حلوا</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه حلوا در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe198">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="حلوا ارده">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>حلوا ارده</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه حلوا ارده در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe199">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بستنی شکلاتی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بستنی شکلاتی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بستنی شکلاتی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe200">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="بستنی وانیلی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>بستنی وانیلی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه بستنی وانیلی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe201">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شیک شکلات">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شیک شکلات</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شیک شکلات در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe202">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="شیک موز">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>شیک موز</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه شیک موز در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe203">مشاهده دستور پخت</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-name="اسموتی توت فرنگی">
+          <div class="recipe-top">
+            <div class="recipe-emoji">🍰</div>
+            <span class="recipe-category">دسر و نوشیدنی</span>
+          </div>
+          <div class="recipe-body">
+            <h2>اسموتی توت فرنگی</h2>
+            <p>دستور کامل و مرحله‌به‌مرحله برای تهیه اسموتی توت فرنگی در خانه.</p>
+            <div class="recipe-info">
+              <span>⏱️ زمان پخت: متغیر</span>
+              <span>👨‍🍳 سطح: متوسط</span>
+            </div>
+            <button type="button" class="view-recipe-btn" data-recipe="recipe204">مشاهده دستور پخت</button>
+          </div>
+        </article>
+      </div>
     </section>
+  </main>
 
+  <!-- این بخش باید در HTML باشد؛ JS محتوای دستور را اینجا نمایش می‌دهد -->
+  <div id="recipeModal" class="recipe-modal" aria-hidden="true">
+    <div id="modalBackdrop" class="modal-backdrop"></div>
 
-
-    <!-- ========================= -->
-    <!-- پنجره دستور پخت -->
-    <!-- ========================= -->
-
-    <div
-        class="modal"
-        id="recipeModal"
-    >
-
-        <div class="modal-content">
-
-
-            <button
-                type="button"
-                class="close-button"
-                id="closeModal"
-            >
-                ×
-            </button>
-
-
-            <div
-                id="modalRecipeContent"
-            >
-
-            </div>
-
-
-        </div>
-
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button id="closeModal" class="close-modal" type="button" aria-label="بستن">×</button>
+      <div id="modalRecipeContent"></div>
     </div>
+  </div>
 
-
-</main>
-
-
-
-<!-- ========================= -->
-<!-- فوتر سایت -->
-<!-- ========================= -->
-
-<footer class="footer">
-
-    <h3>
-        مامان آشپز 👩‍🍳
-    </h3>
-
-    <p>
-        با عشق آشپزی کن ❤️
-    </p>
-
-</footer>
-
-
-
-<!-- ========================= -->
-<!-- اتصال JavaScript -->
-<!-- ========================= -->
-
-<script src="script.js"></script>
-```
-
+  <!-- اتصال مستقیم HTML به JavaScript -->
+  <script src="script.js" defer></script>
 </body>
-
 </html>
